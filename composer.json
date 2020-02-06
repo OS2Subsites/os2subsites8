@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=7.0.8",
-        "bellcom/os2subsites": "dev-develop",
+        "bellcom/os2subsites_provision": "dev-develop",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/console": "^1.0.2",
@@ -54,11 +54,11 @@
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "./scripts/os2subsites/check_config.sh scripts/os2subsites_config"
+            "./scripts/os2subsites_provision/check_config.sh scripts/os2subsites_provision_config"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "./scripts/os2subsites/check_config.sh scripts/os2subsites_config"
+            "./scripts/os2subsites_provision/check_config.sh scripts/os2subsites_provision_config"
         ]
     },
     "extra": {
@@ -73,7 +73,7 @@
         },
 
         "installer-paths": {
-            "scripts/{$name}": ["bellcom/os2subsites"],
+            "scripts/{$name}": ["bellcom/os2subsites_provision"],
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],

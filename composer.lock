@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6af327721f4e3e0b156a09877746afe",
+    "content-hash": "965c9e532590f04c2799d26d2a2bdd9b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -123,17 +123,17 @@
             "time": "2019-12-24T22:41:47+00:00"
         },
         {
-            "name": "bellcom/os2subsites",
+            "name": "bellcom/os2subsites_provision",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2subsite_provision.git",
-                "reference": "809d3456920ef50dec60ed60747f8ee7e92c087d"
+                "reference": "3fceb7e4ebaf0d4d42667f2c9b8956746b243f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/809d3456920ef50dec60ed60747f8ee7e92c087d",
-                "reference": "809d3456920ef50dec60ed60747f8ee7e92c087d",
+                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/3fceb7e4ebaf0d4d42667f2c9b8956746b243f5e",
+                "reference": "3fceb7e4ebaf0d4d42667f2c9b8956746b243f5e",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 "MIT"
             ],
             "description": "Server scripts solution to manage Drupal multisite.",
-            "time": "2020-02-06T09:02:05+00:00"
+            "time": "2020-02-06T12:11:04+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -9044,7 +9044,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "bellcom/os2subsites": 20
+        "bellcom/os2subsites_provision": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
