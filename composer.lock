@@ -3640,12 +3640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "6023c7b46b13cb08f0af14ace2ca8eaebe508e04"
+                "reference": "87d2c6b32366d8952ecd9faac138998542db6b56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/6023c7b46b13cb08f0af14ace2ca8eaebe508e04",
-                "reference": "6023c7b46b13cb08f0af14ace2ca8eaebe508e04",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/87d2c6b32366d8952ecd9faac138998542db6b56",
+                "reference": "87d2c6b32366d8952ecd9faac138998542db6b56",
                 "shasum": ""
             },
             "require": {
@@ -3659,7 +3659,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-02-12T12:29:26+00:00"
+            "time": "2020-02-12T13:06:01+00:00"
         },
         {
             "name": "os2web/os2web_spotbox",
@@ -3667,12 +3667,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "0a578c728ea05a95f4e4def0f68cd814db92bed9"
+                "reference": "24e3f7a10b190cff3edc472d1aca06cab78718d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/0a578c728ea05a95f4e4def0f68cd814db92bed9",
-                "reference": "0a578c728ea05a95f4e4def0f68cd814db92bed9",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/24e3f7a10b190cff3edc472d1aca06cab78718d5",
+                "reference": "24e3f7a10b190cff3edc472d1aca06cab78718d5",
                 "shasum": ""
             },
             "require": {
@@ -3686,7 +3686,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-02-12T12:29:52+00:00"
+            "time": "2020-02-12T13:04:36+00:00"
         },
         {
             "name": "paragonie/random_compat",
