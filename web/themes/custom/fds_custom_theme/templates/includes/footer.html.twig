@@ -1,0 +1,68 @@
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 footer-col d-print-none">
+          <section>
+            <div class="align-text-left">
+
+              <img src="{{ base_path ~ directory }}/dist/images/footer-light.png">
+
+              <br>
+              <br>
+
+              <p>
+                {{ 'Rebild Kommunes operationelle beredskab varetages af Nordjyllands Beredskab.' | trans }}
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 footer-col">
+          <section>
+            <div class="align-text-left">
+
+              {% if theme_settings.contact_information.business_owner_name %}
+                <p>
+                  {{ theme_settings.contact_information.business_owner_name }}
+                </p>
+              {% endif %}
+
+              {% if theme_settings.contact_information.address %}
+                <p>
+                  {{ theme_settings.contact_information.address }}
+                </p>
+              {% endif %}
+
+              {% if theme_settings.contact_information.zipcode and theme_settings.contact_information.city %}
+                <p>
+                  {{ theme_settings.contact_information.zipcode }} {{ theme_settings.contact_information.city }}
+                </p>
+              {% endif %}
+
+              {% if theme_settings.contact_information.phone_readable %}
+                <p>
+                  {{ 'Tlf.:' | trans }} {{ theme_settings.contact_information.phone_readable }}
+                </p>
+              {% endif %}
+
+              {% if theme_settings.contact_information.email %}
+                <p>
+                  <a href="mailto: {{ theme_settings.contact_information.email }}">
+                    {{ theme_settings.contact_information.email }}
+                  </a>
+                </p>
+              {% endif %}
+
+              {% if theme_settings.contact_information.working_hours %}
+                <p>
+                  {{ theme_settings.contact_information.working_hours }}
+                </p>
+              {% endif %}
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
