@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb16d56bdf44c5f5535359e18a99210e",
+    "content-hash": "eff36f34c2f8f9ceef3a5bc8f5a829da",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -121,6 +121,31 @@
                 "stack"
             ],
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "bellcom/fds_base_theme",
+            "version": "dev-stable/drupal-8.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bellcom/fds_base_theme.git",
+                "reference": "5f010c2491d3d532b321fb24c3e01691221ee5ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/5f010c2491d3d532b321fb24c3e01691221ee5ec",
+                "reference": "5f010c2491d3d532b321fb24c3e01691221ee5ec",
+                "shasum": ""
+            },
+            "type": "drupal-theme",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "FDS base theme for Drupal CMS",
+            "support": {
+                "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
+                "issues": "https://github.com/bellcom/fds_base_theme/issues"
+            },
+            "time": "2020-02-17T12:55:45+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -9385,6 +9410,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "bellcom/fds_base_theme": 20,
         "bellcom/os2subsites_provision": 20,
         "os2web/os2web_banner": 20,
         "os2web/os2web_pagebuilder": 20,

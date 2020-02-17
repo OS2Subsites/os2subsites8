@@ -13,10 +13,15 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bellcom/fds_base_theme"
         }
     ],
     "require": {
         "php": ">=7.0.8",
+        "bellcom/fds_base_theme": "dev-stable/drupal-8.x",
         "bellcom/os2subsites_provision": "dev-develop",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
