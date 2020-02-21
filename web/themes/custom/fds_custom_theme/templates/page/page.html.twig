@@ -56,44 +56,46 @@
   </nav>
 </header>
 
-<div class="breadcrumbs-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        {{ page.breadcrumb }}
-      </div>
+{% if not is_front %}
+  <div class="breadcrumbs-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          {{ page.breadcrumb }}
+        </div>
 
-      <div class="col-12 col-md-6">
-        <div class="social-icon-list">
-          <span>
-            {{ 'Del: ' | trans }} &nbsp;
-          </span>
+        <div class="col-12 col-md-6">
+          <div class="social-icon-list">
+            <span>
+              {{ 'Del: ' | trans }} &nbsp;
+            </span>
 
-          <a
-            href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}"
-            target="_blank"
-            class="social-icon social-icon--facebook">
-            <span class="fa fa-facebook-f"></span>
-          </a>
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}"
+              target="_blank"
+              class="social-icon social-icon--facebook">
+              <span class="fa fa-facebook-f"></span>
+            </a>
 
-          <a
-            href="https://twitter.com/intent/tweet?text={{ node.label }}: {{ url('<current>') }}"
-            target="_blank"
-            class="social-icon social-icon--twitter">
-            <span class="fa fa-twitter"></span>
-          </a>
+            <a
+              href="https://twitter.com/intent/tweet?text={{ node.label }}: {{ url('<current>') }}"
+              target="_blank"
+              class="social-icon social-icon--twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
 
-          <a
-            href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ node.label }}"
-            target="_blank"
-            class="social-icon social-icon--linkedin">
-            <span class="fa fa-linkedin"></span>
-          </a>
+            <a
+              href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ node.label }}"
+              target="_blank"
+              class="social-icon social-icon--linkedin">
+              <span class="fa fa-linkedin"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+{% endif %}
 
 {{ page.featured_top }}
 
