@@ -2686,6 +2686,57 @@
             }
         },
         {
+            "name": "drupal/fieldblock",
+            "version": "2.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fieldblock.git",
+                "reference": "8.x-2.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fieldblock-8.x-2.0-alpha4.zip",
+                "reference": "8.x-2.0-alpha4",
+                "shasum": "78af94699e116873fafaf326e805ab73ea51a976"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha4",
+                    "datestamp": "1525680184",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sutharsan",
+                    "homepage": "https://www.drupal.org/user/73854"
+                },
+                {
+                    "name": "marcvangend",
+                    "homepage": "https://www.drupal.org/user/158153"
+                }
+            ],
+            "description": "Display fields of the current entity as blocks.",
+            "homepage": "https://www.drupal.org/project/fieldblock",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fieldblock"
+            }
+        },
+        {
             "name": "drupal/inline_entity_form",
             "version": "1.0.0-rc3",
             "source": {
@@ -3666,12 +3717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_banner.git",
-                "reference": "b52cea84a366bb665e1c9403e27398a6e395c59f"
+                "reference": "e3290c75623ece5206ac390340c9fc03d0f3c4e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_banner/zipball/b52cea84a366bb665e1c9403e27398a6e395c59f",
-                "reference": "b52cea84a366bb665e1c9403e27398a6e395c59f",
+                "url": "https://api.github.com/repos/OS2web/os2web_banner/zipball/e3290c75623ece5206ac390340c9fc03d0f3c4e0",
+                "reference": "e3290c75623ece5206ac390340c9fc03d0f3c4e0",
                 "shasum": ""
             },
             "require": {
@@ -3685,7 +3736,7 @@
                 "EUPL-1.2"
             ],
             "description": "Banner entity",
-            "time": "2020-02-14T12:56:23+00:00"
+            "time": "2020-02-21T10:00:14+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -3720,16 +3771,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "f5ea0d09302bad2ca46bf547f3beddc9bc0f84bc"
+                "reference": "db45e8eb84a9048ed22c9cfd5d22169d88f8f1c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/f5ea0d09302bad2ca46bf547f3beddc9bc0f84bc",
-                "reference": "f5ea0d09302bad2ca46bf547f3beddc9bc0f84bc",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/db45e8eb84a9048ed22c9cfd5d22169d88f8f1c9",
+                "reference": "db45e8eb84a9048ed22c9cfd5d22169d88f8f1c9",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "*",
+                "drupal/fieldblock": "*",
                 "drupal/inline_entity_form": "^1.0@RC",
                 "drupal/paragraphs": "*",
                 "os2web/os2web_contact": "dev-master"
@@ -3740,7 +3792,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-02-14T13:02:57+00:00"
+            "time": "2020-02-21T10:03:16+00:00"
         },
         {
             "name": "os2web/os2web_spotbox",
@@ -3748,12 +3800,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "912070ee28e28de2048532316c3328df23fd2409"
+                "reference": "ec959872d682a6ddf67e67167b5a929a3ee4d8f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/912070ee28e28de2048532316c3328df23fd2409",
-                "reference": "912070ee28e28de2048532316c3328df23fd2409",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/ec959872d682a6ddf67e67167b5a929a3ee4d8f6",
+                "reference": "ec959872d682a6ddf67e67167b5a929a3ee4d8f6",
                 "shasum": ""
             },
             "require": {
@@ -3767,7 +3819,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-02-13T15:41:08+00:00"
+            "time": "2020-02-21T09:55:37+00:00"
         },
         {
             "name": "paragonie/random_compat",
