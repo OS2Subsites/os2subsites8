@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "5f010c2491d3d532b321fb24c3e01691221ee5ec"
+                "reference": "3311755c921569f51b967a0a78d8e51044f826d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/5f010c2491d3d532b321fb24c3e01691221ee5ec",
-                "reference": "5f010c2491d3d532b321fb24c3e01691221ee5ec",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/3311755c921569f51b967a0a78d8e51044f826d9",
+                "reference": "3311755c921569f51b967a0a78d8e51044f826d9",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-02-17T12:55:45+00:00"
+            "time": "2020-02-28T10:28:01+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -3792,7 +3792,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-02-21T10:03:16+00:00"
+            "time": "2020-02-21T13:03:13+00:00"
         },
         {
             "name": "os2web/os2web_spotbox",
