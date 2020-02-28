@@ -65,31 +65,37 @@
         </div>
 
         <div class="col-12 col-md-6">
-          <div class="social-icon-list">
-            <span>
-              {{ 'Del: ' | trans }} &nbsp;
-            </span>
+          <div class="functional-icons-list">
+            <div class="social-icon-list">
+              <span>
+                {{ 'Del: ' | trans }} &nbsp;
+              </span>
 
-            <a
-              href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}"
-              target="_blank"
-              class="social-icon social-icon--facebook">
-              <span class="fa fa-facebook-f"></span>
-            </a>
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}"
+                target="_blank"
+                class="social-icon social-icon--facebook">
+                <span class="fa fa-facebook-f"></span>
+              </a>
 
-            <a
-              href="https://twitter.com/intent/tweet?text={{ node.label }}: {{ url('<current>') }}"
-              target="_blank"
-              class="social-icon social-icon--twitter">
-              <span class="fa fa-twitter"></span>
-            </a>
+              <a
+                href="https://twitter.com/intent/tweet?text={{ node.label }}: {{ url('<current>') }}"
+                target="_blank"
+                class="social-icon social-icon--twitter">
+                <span class="fa fa-twitter"></span>
+              </a>
 
-            <a
-              href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ node.label }}"
-              target="_blank"
-              class="social-icon social-icon--linkedin">
-              <span class="fa fa-linkedin"></span>
-            </a>
+              <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url={{ url('<current>') }}&title={{ node.label }}"
+                target="_blank"
+                class="social-icon social-icon--linkedin">
+                <span class="fa fa-linkedin"></span>
+              </a>
+            </div>
+            <div class="print">
+              <a href="javascript:void(0);" onclick="Drupal.theme.fdsPrintPage();"
+                 >{{ 'Print' | trans }} <svg class="icon-svg"  focusable="false" aria-hidden="true" ><use xlink:href="{{ base_path ~ directory }}/dist/images/symbols.min.svg#printer"></use></svg></a>
+            </div>
           </div>
         </div>
       </div>
