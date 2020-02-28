@@ -1,0 +1,9 @@
+.button{
+  border-radius: 0;
+  border: 0;
+
+  &[type=submit],
+  &.form-submit{
+    background-color: $color-red-001;
+  }
+}

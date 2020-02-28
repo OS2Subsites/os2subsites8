@@ -100,7 +100,7 @@ function fds_custom_theme_preprocess_paragraph__explainer(&$variables) {
  */
 function fds_custom_theme_preprocess_taxonomy_term(&$variables) {}
 
-/*
+/**
  * Implements hook_theme_suggestions_taxonomy_term_alter().
  */
 function fds_custom_theme_theme_suggestions_taxonomy_term_alter(
@@ -112,9 +112,35 @@ function fds_custom_theme_theme_suggestions_taxonomy_term_alter(
   $suggestions[] = 'taxonomy_term__' . $variables['elements']['#view_mode'];
 }
 
-/*
+/**
  * Implements hook_form_search_block_form_alter().
  */
 function fds_custom_theme_form_search_block_form_alter(&$form, FormStateInterface $form_state) {
   $form['keys']['#attributes']['placeholder'] = t('Indtast dine søgeord her...');
+}
+
+/**
+ * Implements hook_form_search_form_alter().
+ */
+function fds_custom_theme_form_search_form_alter(&$form, FormStateInterface $form_state) {
+  $form['basic']['label'] = [
+    '#type' => 'container',
+    '#attributes' => [
+      'class' => ['search-form-label'],
+    ],
+    'markup' => ['#markup' => $form['basic']['keys']['#title']->render()],
+  ];
+  $form['basic']['keys']['#title'] = '';
+  $form['basic']['#attributes'] = [];
+  $form['basic']['search-line'] = [
+    '#type' => 'container',
+    '#attributes' => [
+      'class' => ['container-inline'],
+    ],
+    'keys' => $form['basic']['keys'],
+    'submit' => $form['basic']['submit'],
+  ];
+
+  unset($form['basic']['keys']);
+  unset($form['basic']['submit']);
 }
