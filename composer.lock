@@ -3881,12 +3881,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "043a1c4b1784a3d91bf8941192f9911de523a59a"
+                "reference": "56a3012b81882b19a81fce18fc33791786600a9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/043a1c4b1784a3d91bf8941192f9911de523a59a",
-                "reference": "043a1c4b1784a3d91bf8941192f9911de523a59a",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/56a3012b81882b19a81fce18fc33791786600a9c",
+                "reference": "56a3012b81882b19a81fce18fc33791786600a9c",
                 "shasum": ""
             },
             "require": {
