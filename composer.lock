@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-02-28T10:28:01+00:00"
+            "time": "2020-03-04T15:48:33+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -153,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2subsite_provision.git",
-                "reference": "3fceb7e4ebaf0d4d42667f2c9b8956746b243f5e"
+                "reference": "1396387793181cf8b3500175c5618545f5bded44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/3fceb7e4ebaf0d4d42667f2c9b8956746b243f5e",
-                "reference": "3fceb7e4ebaf0d4d42667f2c9b8956746b243f5e",
+                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/1396387793181cf8b3500175c5618545f5bded44",
+                "reference": "1396387793181cf8b3500175c5618545f5bded44",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "MIT"
             ],
             "description": "Server scripts solution to manage Drupal multisite.",
-            "time": "2020-02-06T12:11:04+00:00"
+            "time": "2020-02-07T10:32:55+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -3817,7 +3817,7 @@
                 "EUPL-1.2"
             ],
             "description": "Banner entity",
-            "time": "2020-02-21T10:00:14+00:00"
+            "time": "2020-03-02T12:09:12+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -3873,7 +3873,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-02-21T13:03:13+00:00"
+            "time": "2020-03-03T15:44:23+00:00"
         },
         {
             "name": "os2web/os2web_spotbox",
@@ -3900,7 +3900,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-02-21T12:57:58+00:00"
+            "time": "2020-03-04T15:45:03+00:00"
         },
         {
             "name": "paragonie/random_compat",
