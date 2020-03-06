@@ -9,6 +9,7 @@ $info = [
     'link' => t('Link color'),
     'link_hover' => t('Link (hover) color'),
     'link_visited' => t('Link (visited) color'),
+    'footer_color' => t('Footer color'),
   ],
 
   // Pre-defined color schemes.
@@ -22,6 +23,7 @@ $info = [
         'link' => '#004D99',
         'link_hover' => '#004080',
         'link_visited' => '#800080',
+        'footer_color' => '#474747',
       ],
     ],
     'virk' => [
@@ -33,6 +35,7 @@ $info = [
         'link' => '#004D99',
         'link_hover' => '#004080',
         'link_visited' => '#800080',
+        'footer_color' => '#474747',
       ],
     ],
     'borger' => [
@@ -44,6 +47,7 @@ $info = [
         'link' => '#004D99',
         'link_hover' => '#004080',
         'link_visited' => '#800080',
+        'footer_color' => '#474747',
       ],
     ],
   ],
