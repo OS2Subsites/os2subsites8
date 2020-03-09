@@ -12,7 +12,6 @@ javascripts:
   js:
     dist/javascripts/app.js: {}
     dist/javascripts/modernizr.js: {}
-    node_modules/dkfds/dist/js/dkfds.js: {}
   dependencies:
     - core/drupal
     - core/jquery
