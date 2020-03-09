@@ -12,7 +12,11 @@ function fds_custom_theme_preprocess_html(array &$variables) {}
 /**
  * Implements hook_preprocess_page().
  */
-function fds_custom_theme_preprocess_page(array &$variables) {}
+function fds_custom_theme_preprocess_page(array &$variables) {
+  $variables['theme_settings'] = [
+    'show_footer_logo' => theme_get_setting('show_footer_logo'),
+  ];
+}
 
 /*
  * Implements hook_preprocess_paragraph().

@@ -5,12 +5,11 @@
         <div class="col-12 col-sm-12 col-md-6 footer-col d-print-none">
           <section>
             <div class="align-text-left">
-
-              <img src="{{ base_path ~ directory }}/dist/images/footer-light.png">
-
-              <br>
-              <br>
-
+              {% if theme_settings.show_footer_logo %}
+                <img src="{{ base_path ~ directory }}/dist/images/footer-light.png">
+                <br>
+                <br>
+              {% endif %}
               <p>
                 {{ 'Rebild Kommunes operationelle beredskab varetages af Nordjyllands Beredskab.' | trans }}
               </p>
