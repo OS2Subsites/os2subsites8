@@ -161,7 +161,17 @@ header {}
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+  .header {
+    .navbar {
+      display: none;
+    }
+
+    .portal-header .container {
+      border: 0;
+    }
+  }
+}
 
 // Touch
 .touchevents {}

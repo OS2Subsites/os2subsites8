@@ -78,7 +78,27 @@
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+  .breadcrumbs-wrapper {
+    display: none;
+  }
+
+  .region {
+    &-sidebar {
+      &-first,
+      &-second {
+        display: none;
+      }
+    }
+
+    &-secondary-menu,
+    &-featured-top,
+    &-featured-bottom-first {
+      display: none;
+    }
+
+  }
+}
 
 // Touch
 .touchevents {}

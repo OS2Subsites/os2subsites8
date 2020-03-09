@@ -81,7 +81,11 @@ footer {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+  footer .footer {
+    border: none;
+  }
+}
 
 // Touch
 .touchevents {}

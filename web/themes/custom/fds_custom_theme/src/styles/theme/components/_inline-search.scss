@@ -82,7 +82,11 @@
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+  .inline-search {
+    display: none;
+  }
+}
 
 // Touch
 .touchevents {}
