@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "744d25dbeeeed6b3e927c18e0f0aa4a0",
+    "content-hash": "4284fba98df1210182aa24d387a69e49",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6364,6 +6364,32 @@
             ],
             "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
             "time": "2019-12-18T10:35:16+00:00"
+        },
+        {
+            "name": "os2web/os2web_hjemmeside",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_hjemmeside.git",
+                "reference": "84715189985fcb6e68cbb7e62d657e837263d3f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/84715189985fcb6e68cbb7e62d657e837263d3f4",
+                "reference": "84715189985fcb6e68cbb7e62d657e837263d3f4",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*",
+                "os2web/os2web": "8.x-dev"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Main module that brings hjemmeside general configuration.",
+            "time": "2020-03-10T16:07:19+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
@@ -13993,6 +14019,7 @@
         "bellcom/os2subsites_provision": 20,
         "os2web/os2web": 20,
         "os2web/os2web_banner": 20,
+        "os2web/os2web_hjemmeside": 20,
         "os2web/os2web_pagebuilder": 20,
         "os2web/os2web_spotbox": 20
     },
