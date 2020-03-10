@@ -6446,12 +6446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "84715189985fcb6e68cbb7e62d657e837263d3f4"
+                "reference": "47fd9f46cb25670ad14c2e12e157b109864c6d83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/84715189985fcb6e68cbb7e62d657e837263d3f4",
-                "reference": "84715189985fcb6e68cbb7e62d657e837263d3f4",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/47fd9f46cb25670ad14c2e12e157b109864c6d83",
+                "reference": "47fd9f46cb25670ad14c2e12e157b109864c6d83",
                 "shasum": ""
             },
             "require": {
