@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4284fba98df1210182aa24d387a69e49",
+    "content-hash": "4ea4ace94fe145acfbb8337f58e2de94",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5226,6 +5226,81 @@
             }
         },
         {
+            "name": "drupal/stage_file_proxy",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stage_file_proxy.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "f101a07e0096f476c91cf23137469a5c5c18e2df"
+            },
+            "require": {
+                "drupal/core": ">=8.7.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1580492032",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "BarisW",
+                    "homepage": "https://www.drupal.org/user/107229"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "markdorison",
+                    "homepage": "https://www.drupal.org/user/346106"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "msonnabaum",
+                    "homepage": "https://www.drupal.org/user/75278"
+                },
+                {
+                    "name": "netaustin",
+                    "homepage": "https://www.drupal.org/user/199298"
+                },
+                {
+                    "name": "robwilmshurst",
+                    "homepage": "https://www.drupal.org/user/144488"
+                }
+            ],
+            "description": "Provides stage_file_proxy module.",
+            "homepage": "https://www.drupal.org/project/stage_file_proxy",
+            "support": {
+                "source": "https://git.drupalcode.org/project/stage_file_proxy"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.6.0",
             "source": {
@@ -6319,12 +6394,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "e4514b7070d74770f2b32c52fe26674611e99976"
+                "reference": "14e758e76a27474acb9e72319515a78175cbf33a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/e4514b7070d74770f2b32c52fe26674611e99976",
-                "reference": "e4514b7070d74770f2b32c52fe26674611e99976",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/14e758e76a27474acb9e72319515a78175cbf33a",
+                "reference": "14e758e76a27474acb9e72319515a78175cbf33a",
                 "shasum": ""
             },
             "require": {
@@ -6419,12 +6494,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "b281d4d3ca09cda88b411d55eebe91be9c5d2afb"
+                "reference": "a285000289cd23b99a7c0dffdf39f31ac5b9208c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/b281d4d3ca09cda88b411d55eebe91be9c5d2afb",
-                "reference": "b281d4d3ca09cda88b411d55eebe91be9c5d2afb",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/a285000289cd23b99a7c0dffdf39f31ac5b9208c",
+                "reference": "a285000289cd23b99a7c0dffdf39f31ac5b9208c",
                 "shasum": ""
             },
             "require": {
@@ -6498,12 +6573,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "56a3012b81882b19a81fce18fc33791786600a9c"
+                "reference": "703ac0b22eb2c082ab5456947e150b55f3ae9896"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/56a3012b81882b19a81fce18fc33791786600a9c",
-                "reference": "56a3012b81882b19a81fce18fc33791786600a9c",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/703ac0b22eb2c082ab5456947e150b55f3ae9896",
+                "reference": "703ac0b22eb2c082ab5456947e150b55f3ae9896",
                 "shasum": ""
             },
             "require": {
