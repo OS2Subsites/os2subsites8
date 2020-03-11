@@ -10,6 +10,11 @@
 // Variables
 // --------------------------------------------------
 
+// Color for specific regions should be unique
+// That will allow theme adjust this colors with color module.
+$color-footer-text: #999998;
+$color-footer-link: #fffffe;
+
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
@@ -27,13 +32,13 @@ footer {
     padding-bottom: calc(#{map-get($spacers, 9)} - 1px);
 
     &, p {
-      color: #999;
+      color: $color-footer-text;
     }
 
     a {
       text-decoration: none;
 
-      color: #fff;
+      color: $color-footer-link;
     }
   }
 

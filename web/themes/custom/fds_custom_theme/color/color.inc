@@ -9,7 +9,9 @@ $info = [
     'link' => t('Link color'),
     'link_hover' => t('Link (hover) color'),
     'link_visited' => t('Link (visited) color'),
-    'footer_color' => t('Footer color'),
+    'footer_bkg_color' => t('Footer background color'),
+    'footer_text_color' => t('Footer text color'),
+    'footer_link_color' => t('Footer link color'),
   ],
 
   // Pre-defined color schemes.
@@ -23,7 +25,9 @@ $info = [
         'link' => '#004D99',
         'link_hover' => '#004080',
         'link_visited' => '#800080',
-        'footer_color' => '#474747',
+        'footer_bkg_color' => '#474747',
+        'footer_text_color' => '#999998',
+        'footer_link_color' => '#fffffe',
       ],
     ],
     'virk' => [
@@ -35,7 +39,9 @@ $info = [
         'link' => '#004D99',
         'link_hover' => '#004080',
         'link_visited' => '#800080',
-        'footer_color' => '#474747',
+        'footer_bkg_color' => '#474747',
+        'footer_text_color' => '#999998',
+        'footer_link_color' => '#fffffe',
       ],
     ],
     'borger' => [
@@ -47,7 +53,9 @@ $info = [
         'link' => '#004D99',
         'link_hover' => '#004080',
         'link_visited' => '#800080',
-        'footer_color' => '#474747',
+        'footer_bkg_color' => '#474747',
+        'footer_text_color' => '#999998',
+        'footer_link_color' => '#fffffe',
       ],
     ],
   ],
