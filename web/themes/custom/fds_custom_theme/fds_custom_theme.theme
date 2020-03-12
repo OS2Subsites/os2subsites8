@@ -159,3 +159,47 @@ function fds_custom_theme_form_search_form_alter(&$form, FormStateInterface $for
   unset($form['basic']['keys']);
   unset($form['basic']['submit']);
 }
+
+/**
+ * Prepares variables for OS2Web Spotbox templates.
+ *
+ * Default template: os2web_spotbox.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the user information and any
+ *   - attributes: HTML attributes for the containing element.
+ */
+function fds_base_theme_preprocess_os2web_spotbox__image(array &$variables) {
+  $spotbox = $variables['elements']['#os2web_spotbox'];
+  $variables['spotbox_url'] = FALSE;
+  if (!empty($variables['content']['field_os2web_spotbox_link'][0]['#url'])) {
+    $variables['spotbox_url'] = $variables['content']['field_os2web_spotbox_link'][0]['#url'];
+  }
+
+  if (!empty($variables['content']['field_os2web_spotbox_link'][0]['#title'])
+    && $variables['spotbox_url']
+    && $variables['content']['field_os2web_spotbox_link'][0]['#title'] != $variables['spotbox_url']->toString()) {
+    $variables['spotbox_text'] = $variables['content']['field_os2web_spotbox_link'][0]['#title'];
+  }
+
+  if (($variables['content']['field_os2web_spotbox_image'][0]['#view_mode'])) {
+    $image_view_mode = $variables['content']['field_os2web_spotbox_image'][0]['#view_mode'];
+    /** @var \Drupal\Core\Entity\Display\EntityDisplayInterface $entity */
+    $entity_view_display = \Drupal::entityTypeManager()
+      ->getStorage('entity_view_display')
+      ->load('media.image.' . $image_view_mode);
+    if (!empty($entity_view_display)) {
+      $display_component = $entity_view_display->getComponent('field_media_image');
+      $image_style = $display_component['settings']['image_style'];
+      $image_item = $spotbox->field_os2web_spotbox_image->entity->field_media_image->first();
+      $image = [
+        '#theme' => 'image_style',
+        '#style_name' => $image_style,
+        '#alt' => $image_item->alt,
+        '#uri' => $image_item->entity->getFileUri(),
+      ];
+      $variables['spotbox_image'] = $image;
+    }
+  }
+}
