@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "cfab851e6758c9b6a5357df0fcf5dfc4e2d31c95"
+                "reference": "1403ab0f978ccc07bc0029a32d96d467ed2b3ed0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/cfab851e6758c9b6a5357df0fcf5dfc4e2d31c95",
-                "reference": "cfab851e6758c9b6a5357df0fcf5dfc4e2d31c95",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/1403ab0f978ccc07bc0029a32d96d467ed2b3ed0",
+                "reference": "1403ab0f978ccc07bc0029a32d96d467ed2b3ed0",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -6573,12 +6573,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "703ac0b22eb2c082ab5456947e150b55f3ae9896"
+                "reference": "8600d3d843b507c9d437485d4664c9a13b48f2e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/703ac0b22eb2c082ab5456947e150b55f3ae9896",
-                "reference": "703ac0b22eb2c082ab5456947e150b55f3ae9896",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/8600d3d843b507c9d437485d4664c9a13b48f2e4",
+                "reference": "8600d3d843b507c9d437485d4664c9a13b48f2e4",
                 "shasum": ""
             },
             "require": {
