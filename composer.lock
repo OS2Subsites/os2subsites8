@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "1403ab0f978ccc07bc0029a32d96d467ed2b3ed0"
+                "reference": "6eeadbb787ba21253472f12ce22c296187333877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/1403ab0f978ccc07bc0029a32d96d467ed2b3ed0",
-                "reference": "1403ab0f978ccc07bc0029a32d96d467ed2b3ed0",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/6eeadbb787ba21253472f12ce22c296187333877",
+                "reference": "6eeadbb787ba21253472f12ce22c296187333877",
                 "shasum": ""
             },
             "type": "drupal-theme",
