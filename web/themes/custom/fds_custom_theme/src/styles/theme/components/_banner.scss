@@ -29,8 +29,6 @@
 }
 
 .banner__box {
-  max-width: 50%;
-
   padding: 20px;
 
   background-color: rgba(255, 255, 255, .9);
@@ -96,7 +94,11 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+  .banner__box {
+    max-width: 50%;
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

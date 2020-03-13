@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Spotbox
+// | Box paragraph
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-spotbox
+// | - .paragraph--type--os2web-box-paragraph
 // |
 
 // --------------------------------------------------
@@ -20,7 +20,7 @@
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-spotbox {
+.paragraph--type--os2web-box-paragraph {
   margin: 0 0 20px 0;
 }
 
@@ -39,7 +39,8 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}

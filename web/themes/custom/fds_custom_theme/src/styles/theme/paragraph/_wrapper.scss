@@ -20,8 +20,13 @@
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-wrapper.background-color {
-    &--primary {
+.paragraph--type--os2web-wrapper {
+  padding: 20px 0;
+
+  &.background-color {
+    &--primary,
+    &--secondary,
+    &--tertiary {
       background-color: $color-primary;
       color: $color-white;
       h1, h2, h3, h4, h5, h6 {
@@ -29,6 +34,7 @@
       }
     }
   }
+}
 
 // --------------------------------------------------
 // Variants
@@ -46,7 +52,6 @@
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {
-
   .paragraph--type--os2web-wrapper {
     padding: 60px 0;
   }
