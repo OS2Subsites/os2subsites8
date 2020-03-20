@@ -22,6 +22,41 @@
 
 .paragraph--type--os2web-spotbox {
   margin: 0 0 20px 0;
+
+  .field--name-field-os2web-spotbox-image {
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    + .field {
+      margin-top: 10px;
+    }
+  }
+
+  .field--name-user-id {
+    display: none;
+  }
+
+  .field--name-field-os2web-spotbox-link-butt {}
+  .field--name-field-os2web-spotbox-link {}
+  .field--name-field-os2web-spotbox-link-text {}
+
+  .field--name-field-os2web-spotbox-link-butt,
+  .field--name-field-os2web-spotbox-link,
+  .field--name-field-os2web-spotbox-link-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+  .card-content {}
+  .content-text {
+    padding-bottom: 20px;
+  }
 }
 
 // --------------------------------------------------
