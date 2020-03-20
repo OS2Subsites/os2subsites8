@@ -153,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2subsite_provision.git",
-                "reference": "1396387793181cf8b3500175c5618545f5bded44"
+                "reference": "888a99547c235111e533c10581e4a468ca762a46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/1396387793181cf8b3500175c5618545f5bded44",
-                "reference": "1396387793181cf8b3500175c5618545f5bded44",
+                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/888a99547c235111e533c10581e4a468ca762a46",
+                "reference": "888a99547c235111e533c10581e4a468ca762a46",
                 "shasum": ""
             },
             "require": {
