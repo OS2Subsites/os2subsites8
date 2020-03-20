@@ -39,7 +39,13 @@
     display: none;
   }
 
-  .field--name-field-os2web-spotbox-link-butt {}
+  .field--name-field-os2web-spotbox-link-butt {
+
+    a {
+      @extend .button;
+      @extend .button-primary;
+    }
+  }
   .field--name-field-os2web-spotbox-link {}
   .field--name-field-os2web-spotbox-link-text {}
 
