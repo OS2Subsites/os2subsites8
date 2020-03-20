@@ -20,16 +20,21 @@
   'os2web-spotbox--' ~ spotbox_type,
 ] %}
 <div{{ attributes.addClass(classes) }}>
+
   {% if spotbox_url %}
     <a href="{{ spotbox_url }}" title="{{ spotbox_text }}">
   {% endif %}
+
     {% if spotbox_image %}
-      <span class="os2web-spotbox--image--image">{{ spotbox_image }}</span>
+      <div class="os2web-spotbox__image">{{ spotbox_image }}</div>
     {% endif %}
+
     {% if spotbox_text %}
-      <span class="os2web-spotbox--image--text">{{ spotbox_text }}</span>
+      <div class="os2web-spotbox__text">{{ spotbox_text }}</div>
     {% endif %}
+
   {% if spotbox_url %}
     </a>
   {% endif %}
+
 </div>

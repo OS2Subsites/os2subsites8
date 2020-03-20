@@ -21,24 +21,28 @@
 // --------------------------------------------------
 
 .os2web-spotbox--image {
+
   a {
     text-decoration: none;
     color: $color-text;
   }
 
-  &--image {
+  .os2web-spotbox__image {
     display: block;
+
     line-height: 0;
 
     img {
       width: 100%;
+
       height: auto;
     }
   }
 
-  &--text {
-    padding: 20px 20px 10px;
+  .os2web-spotbox__text {
     display: block;
+
+    padding: 20px 20px 10px;
   }
 }
 
