@@ -30,3 +30,6 @@
 .gitattributes
 
 .DS_Store
+*.log
+*.sql
+*.sql.gz
