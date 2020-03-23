@@ -6476,12 +6476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_banner.git",
-                "reference": "718901ada4c7fbaa6deed6a42334a0df8bf76a93"
+                "reference": "7c7d35df8546ecb2671cd0996d65d5f4a0b0becb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_banner/zipball/718901ada4c7fbaa6deed6a42334a0df8bf76a93",
-                "reference": "718901ada4c7fbaa6deed6a42334a0df8bf76a93",
+                "url": "https://api.github.com/repos/OS2web/os2web_banner/zipball/7c7d35df8546ecb2671cd0996d65d5f4a0b0becb",
+                "reference": "7c7d35df8546ecb2671cd0996d65d5f4a0b0becb",
                 "shasum": ""
             },
             "require": {
@@ -6503,12 +6503,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "14e758e76a27474acb9e72319515a78175cbf33a"
+                "reference": "a0e25f687982ff74f8ca2e73360768f0e4b31fcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/14e758e76a27474acb9e72319515a78175cbf33a",
-                "reference": "14e758e76a27474acb9e72319515a78175cbf33a",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/a0e25f687982ff74f8ca2e73360768f0e4b31fcd",
+                "reference": "a0e25f687982ff74f8ca2e73360768f0e4b31fcd",
                 "shasum": ""
             },
             "require": {
@@ -6684,12 +6684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "8600d3d843b507c9d437485d4664c9a13b48f2e4"
+                "reference": "1bcdde4e714ad035be3187e76e628bee1bb040a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/8600d3d843b507c9d437485d4664c9a13b48f2e4",
-                "reference": "8600d3d843b507c9d437485d4664c9a13b48f2e4",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/1bcdde4e714ad035be3187e76e628bee1bb040a8",
+                "reference": "1bcdde4e714ad035be3187e76e628bee1bb040a8",
                 "shasum": ""
             },
             "require": {
