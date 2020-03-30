@@ -41,6 +41,13 @@
     color: #fff;
   }
 
+  a {
+
+    &, &:hover {
+      color: #fff;
+    }
+  }
+
   p {
 
     &:first-child {
