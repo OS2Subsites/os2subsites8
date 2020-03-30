@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "2ecab88b92331349443210a44b3e2e690d2add9a"
+                "reference": "2ac610223866849cc7fe1aeb9747fcda69919e3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/2ecab88b92331349443210a44b3e2e690d2add9a",
-                "reference": "2ecab88b92331349443210a44b3e2e690d2add9a",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/2ac610223866849cc7fe1aeb9747fcda69919e3b",
+                "reference": "2ac610223866849cc7fe1aeb9747fcda69919e3b",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-03-27T06:44:59+00:00"
+            "time": "2020-03-30T14:44:34+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
