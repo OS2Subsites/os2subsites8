@@ -6733,12 +6733,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "47fd9f46cb25670ad14c2e12e157b109864c6d83"
+                "reference": "fa759614f58f6d224a697a9175562be30c37c2d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/47fd9f46cb25670ad14c2e12e157b109864c6d83",
-                "reference": "47fd9f46cb25670ad14c2e12e157b109864c6d83",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/fa759614f58f6d224a697a9175562be30c37c2d7",
+                "reference": "fa759614f58f6d224a697a9175562be30c37c2d7",
                 "shasum": ""
             },
             "require": {
