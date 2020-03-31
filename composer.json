@@ -106,6 +106,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "enable-patching" : true,
+        "patches": {
+            "drupal/core": {
+                "3016038 - Unrecognised entity operation passed to Menu Link Content throws exceptions": "https://www.drupal.org/files/issues/2019-02-21/3016038-5.patch"
+            }
         }
     }
 }
