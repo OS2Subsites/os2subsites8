@@ -20,35 +20,11 @@
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-simple-text-paragraph {
+.paragraph--type--os2web-simple-text-paragraph {}
 
-  .field--name-field-os2web-simple-text-heading {
+.field--name-field-os2web-simple-text-heading {
 
-    h1, h2, h3, h4, h5, h6 {
-
-      /* These are technically the same, but use both */
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-
-      -ms-word-break: break-all;
-      /* This is the dangerous one in WebKit, as it breaks things wherever */
-      word-break: break-all;
-      /* Instead use this non-standard one: */
-      word-break: break-word;
-
-      /* Adds a hyphen where the word breaks, if supported (No Blink) */
-      -ms-hyphens: auto;
-      -moz-hyphens: auto;
-      -webkit-hyphens: auto;
-      hyphens: auto;
-    }
-  }
-
-  .field--name-field-os2web-simple-text-subhead {
-    position: relative;
-
-    padding-bottom: 18px;
-    margin-bottom: 15px;
+  h1, h2, h3, h4, h5, h6 {
 
     /* These are technically the same, but use both */
     overflow-wrap: break-word;
@@ -65,20 +41,67 @@
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+  }
+}
 
-    &:after {
-      position: absolute;
+.field--name-field-os2web-simple-text-subhead {
+  position: relative;
 
-      left: 0;
-      bottom: 0;
+  padding-bottom: 18px;
+  margin-bottom: 15px;
 
-      content: "";
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 
-      height: 3px;
-      width: 60px;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
 
-      background-color: $color-primary;
-    }
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+  &:after {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    content: "";
+
+    height: 3px;
+    width: 60px;
+
+    background-color: $color-primary;
+  }
+}
+
+.field--name-field-os2web-simple-text-body {
+
+  a,
+  p,
+  h1, h2, h3, h4, h5, h6 {
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 }
 
