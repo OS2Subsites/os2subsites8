@@ -54,7 +54,10 @@
 @include media-breakpoint-up(md) {
 
   .breadcrumbs-wrapper {
-    margin-top: 7px;
+
+    .breadcrumb {
+      margin-top: 7px;
+    }
 
     .functional-icons-list {
       display: flex;
