@@ -22,23 +22,28 @@
 
 .paragraph--type--os2web-wrapper {
   padding: 20px 0;
-
-  &.background-color {
-    &--primary,
-    &--secondary,
-    &--tertiary {
-      background-color: $color-primary;
-      color: $color-white;
-      h1, h2, h3, h4, h5, h6 {
-        color: $color-white;
-      }
-    }
-  }
 }
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.paragraph--type--os2web-wrapper {
+
+  &.background-color--primary,
+  &.background-color--secondary,
+  &.background-color--tertiary {
+    color: $color-white;
+    background-color: $color-primary;
+
+    &,
+    a, a:active, a:hover, a:focus, a:visited,
+    p,
+    h1, h2, h3, h4, h5, h6 {
+      color: $color-white;
+    }
+  }
+}
 
 // --------------------------------------------------
 // Responsive
@@ -52,8 +57,9 @@
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {
+
   .paragraph--type--os2web-wrapper {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 }
 
