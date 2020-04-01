@@ -54,9 +54,11 @@
 @include media-breakpoint-up(md) {
 
   .breadcrumbs-wrapper {
+    margin-top: 7px;
+
     .functional-icons-list {
-      justify-content: flex-end;
       display: flex;
+      justify-content: flex-end;
     }
 
     .social-icon-list {

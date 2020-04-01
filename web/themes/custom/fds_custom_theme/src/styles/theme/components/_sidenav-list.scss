@@ -60,15 +60,26 @@
 
       &.current {
         border-left: 0;
+
+        &.has-submenu {
+          padding-bottom: 10px;
+
+          > a {
+
+            &:after {
+              content: $fa-var-angle-down;
+            }
+          }
+        }
       }
 
-      &.current,
       &.active {
+        background-color: $color-gray-pale;
 
-        > a {
+        .sidenav-sub_list {
 
-          &:after {
-            content: $fa-var-angle-down;
+          a {
+            color: $color-neutral;
           }
         }
       }
@@ -110,10 +121,16 @@
   .sidenav-list,
   .sidenav-sub_list {
 
+    a {
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     > li {
 
-      &.active,
-      &.current {
+      &.active {
 
         a {
           color: $color-link;
@@ -126,9 +143,22 @@
 
     a {
       padding: 0;
+
+      font-size: 1.4rem;
+      line-height: 1.6rem;
     }
 
     > li {
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
 
       &.current {
 
