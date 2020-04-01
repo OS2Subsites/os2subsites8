@@ -40,7 +40,7 @@ function fds_custom_theme_preprocess_paragraph(&$variables) {
 
   // Background image
   if ($paragraph->field_background_image && !$paragraph->field_background_image->isEmpty()) {
-    $image_uri   = $paragraph->field_background_image->entity->getFileUri();
+    $image_uri   = $paragraph->field_background_image->first()->entity->getFileUri();
     $image_style = ImageStyle::load('paragraph_background_image');
     $image_url   = $image_style->buildUrl($image_uri);
 
@@ -48,9 +48,9 @@ function fds_custom_theme_preprocess_paragraph(&$variables) {
   }
 
   if ($paragraph->bundle() == 'os2web_banner_paragraph'
-    && $paragraph->hasField('field_os2web_banner_bg_image')
-    && !$paragraph->field_os2web_banner_bg_image->isEmpty()) {
-    $image_uri = $paragraph->field_os2web_banner_bg_image->entity->field_media_image->entity->getFileUri();
+    && $paragraph->hasField('field_os2web_banner_image')
+    && !$paragraph->field_os2web_banner_image->isEmpty()) {
+    $image_uri = $paragraph->field_os2web_banner_image->first()->entity->getFileUri();
     $image_style = ImageStyle::load('paragraph_background_image');
     if (!empty($image_style)) {
       $image_url = $image_style->buildUrl($image_uri);
@@ -183,23 +183,7 @@ function fds_base_theme_preprocess_os2web_spotbox__image(array &$variables) {
     $variables['spotbox_text'] = $variables['content']['field_os2web_spotbox_link'][0]['#title'];
   }
 
-  if (($variables['content']['field_os2web_spotbox_image'][0]['#view_mode'])) {
-    $image_view_mode = $variables['content']['field_os2web_spotbox_image'][0]['#view_mode'];
-    /** @var \Drupal\Core\Entity\Display\EntityDisplayInterface $entity */
-    $entity_view_display = \Drupal::entityTypeManager()
-      ->getStorage('entity_view_display')
-      ->load('media.image.' . $image_view_mode);
-    if (!empty($entity_view_display)) {
-      $display_component = $entity_view_display->getComponent('field_media_image');
-      $image_style = $display_component['settings']['image_style'];
-      $image_item = $spotbox->field_os2web_spotbox_image->entity->field_media_image->first();
-      $image = [
-        '#theme' => 'image_style',
-        '#style_name' => $image_style,
-        '#alt' => $image_item->alt,
-        '#uri' => $image_item->entity->getFileUri(),
-      ];
-      $variables['spotbox_image'] = $image;
-    }
+  if (!empty($variables['content']['field_os2web_spotbox_bg_image'][0])) {
+    $variables['spotbox_image'] = $variables['content']['field_os2web_spotbox_bg_image'][0];
   }
 }
