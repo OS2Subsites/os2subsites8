@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ea4ace94fe145acfbb8337f58e2de94",
+    "content-hash": "843a9d61c8756f00a9e95727d2d07505",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "f51c97548cb00ad83ed5f5535c64499e9d315cfa"
+                "reference": "be5ec03bd14e3c397d802ef7ddceb94fbef5bb9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/f51c97548cb00ad83ed5f5535c64499e9d315cfa",
-                "reference": "f51c97548cb00ad83ed5f5535c64499e9d315cfa",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/be5ec03bd14e3c397d802ef7ddceb94fbef5bb9c",
+                "reference": "be5ec03bd14e3c397d802ef7ddceb94fbef5bb9c",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-03-31T10:21:56+00:00"
+            "time": "2020-04-01T10:06:44+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -3355,6 +3355,9 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "3016038 - Unrecognised entity operation passed to Menu Link Content throws exceptions": "https://www.drupal.org/files/issues/2019-02-21/3016038-5.patch"
                 }
             },
             "autoload": {
@@ -6751,7 +6754,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-03-10T16:15:02+00:00"
+            "time": "2020-03-31T13:37:52+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
