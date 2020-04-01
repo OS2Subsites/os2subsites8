@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "be5ec03bd14e3c397d802ef7ddceb94fbef5bb9c"
+                "reference": "c67e212b669e4ea17667e3ab95593029d75ef0d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/be5ec03bd14e3c397d802ef7ddceb94fbef5bb9c",
-                "reference": "be5ec03bd14e3c397d802ef7ddceb94fbef5bb9c",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/c67e212b669e4ea17667e3ab95593029d75ef0d1",
+                "reference": "c67e212b669e4ea17667e3ab95593029d75ef0d1",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-04-01T10:06:44+00:00"
+            "time": "2020-04-01T13:56:41+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -170,7 +170,7 @@
                 "MIT"
             ],
             "description": "Server scripts solution to manage Drupal multisite.",
-            "time": "2020-03-26T14:30:43+00:00"
+            "time": "2020-04-01T12:54:55+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
