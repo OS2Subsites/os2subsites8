@@ -63,7 +63,12 @@
 
     background-color: $color-gray-pale;
   }
-  .card-content {}
+  .card-content {
+    display: flex;
+
+    align-items: flex-end;
+    min-height: 78px;
+  }
   .content-text {
     padding-bottom: 20px;
   }
