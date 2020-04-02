@@ -3,3 +3,15 @@ body .container-fluid {
   padding-left: $grid-gutter-width;
   padding-right: $grid-gutter-width;
 }
+
+// Accessibility overrides.
+a,
+.breadcrumb a {
+
+  &:focus {
+    outline-width: 2px;
+    outline-offset: 0;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}

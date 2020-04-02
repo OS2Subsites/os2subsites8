@@ -35,6 +35,10 @@
 
         font-weight: bold;
 
+        &:focus {
+          color: $color-neutral;
+        }
+
         &:hover {
           text-decoration: underline;
         }
@@ -79,7 +83,10 @@
         .sidenav-sub_list {
 
           a {
-            color: $color-neutral;
+
+            &, &:focus {
+              color: $color-neutral;
+            }
           }
         }
       }
@@ -126,6 +133,10 @@
       &:hover {
         text-decoration: underline;
       }
+
+      &:focus {
+        color: $color-neutral;
+      }
     }
 
     > li {
@@ -133,7 +144,10 @@
       &.active {
 
         a {
-          color: $color-link;
+
+          &, &:focus {
+            color: $color-link;
+          }
         }
       }
     }
