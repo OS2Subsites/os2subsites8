@@ -5,6 +5,10 @@ body .container-fluid {
 }
 
 // Accessibility overrides.
+body a {
+  outline-width: 2px;
+}
+
 .region-content a,
 .breadcrumb a {
 
