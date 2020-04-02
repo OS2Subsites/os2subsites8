@@ -21,79 +21,39 @@
 // --------------------------------------------------
 
 .box {
-  background-color: $color-primary;
+  background-color: $color-gray-pale;
 }
-.box__heading {
-  padding: 15px 20px;
-
-  background-color: rgba(0,0,0, .15);
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-
-    color: #fff;
-
-    /* These are technically the same, but use both */
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-
-    -ms-word-break: break-all;
-    /* This is the dangerous one in WebKit, as it breaks things wherever */
-    word-break: break-all;
-    /* Instead use this non-standard one: */
-    word-break: break-word;
-
-    /* Adds a hyphen where the word breaks, if supported (No Blink) */
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-  }
-}
-.box__body {
-  padding: 15px 20px;
-
-  /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-
-  &, p, .body-text {
-    color: #fff;
-  }
-
-  a {
-
-    &, &:hover, &:focus, &:visited {
-      color: #fff;
-    }
-  }
-
-  p {
-
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
+.box__heading {}
+.box__body {}
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.box--primary {
+  background-color: $color-primary;
+
+  .box__heading {
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+    }
+  }
+
+  .box__body {
+
+    &, p, .body-text {
+      color: #fff;
+    }
+
+    a {
+
+      &, &:hover, &:focus, &:visited {
+        color: #fff;
+      }
+    }
+  }
+}
 
 // --------------------------------------------------
 // Responsive
