@@ -27,11 +27,15 @@
   {% endif %}
 
     {% if spotbox_image %}
-      <div class="os2web-spotbox__image">{{ spotbox_image }}</div>
+      <span class="os2web-spotbox__image">{{ spotbox_image }}</span>
     {% endif %}
 
     {% if spotbox_text %}
-      <div class="os2web-spotbox__text">{{ spotbox_text }}</div>
+      <span class="os2web-spotbox__text">
+        <strong>
+          {{ spotbox_text }}
+        </strong>
+      </span>
     {% endif %}
 
   {% if spotbox_url %}
