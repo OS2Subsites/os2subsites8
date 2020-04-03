@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "c67e212b669e4ea17667e3ab95593029d75ef0d1"
+                "reference": "21d2206f2a5bdcd72f0f32629429e6d994f050f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/c67e212b669e4ea17667e3ab95593029d75ef0d1",
-                "reference": "c67e212b669e4ea17667e3ab95593029d75ef0d1",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/21d2206f2a5bdcd72f0f32629429e6d994f050f7",
+                "reference": "21d2206f2a5bdcd72f0f32629429e6d994f050f7",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-04-01T13:56:41+00:00"
+            "time": "2020-04-02T12:33:51+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -6754,7 +6754,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-03-31T13:37:52+00:00"
+            "time": "2020-04-02T09:47:12+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
@@ -6807,7 +6807,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-03-23T10:46:45+00:00"
+            "time": "2020-04-01T17:18:19+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -6885,7 +6885,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-03-23T14:48:10+00:00"
+            "time": "2020-04-01T17:16:44+00:00"
         },
         {
             "name": "paragonie/random_compat",
