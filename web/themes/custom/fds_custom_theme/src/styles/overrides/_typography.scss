@@ -62,7 +62,28 @@ p, .body-text {
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin-top: 30px;
+  }
+
+  h2, .h2 {
+    margin-bottom: 22px;
+  }
+
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin-bottom: 18px;
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
