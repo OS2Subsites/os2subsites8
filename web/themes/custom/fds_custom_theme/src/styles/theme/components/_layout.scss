@@ -42,7 +42,12 @@
 @include media-breakpoint-up(xs) {}
 
 // Mobile - only
-@include media-breakpoint-only(xs, $grid-breakpoints) {}
+@include media-breakpoint-only(xs, $grid-breakpoints) {
+
+  .content--content {
+    order: -1;
+  }
+}
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {}
