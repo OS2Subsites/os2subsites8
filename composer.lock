@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "1460ee59aff0df5fd42807093c231b858402ddff"
+                "reference": "28b114daf9b0f01791f7a3139ab850fdffd9033a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/1460ee59aff0df5fd42807093c231b858402ddff",
-                "reference": "1460ee59aff0df5fd42807093c231b858402ddff",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/28b114daf9b0f01791f7a3139ab850fdffd9033a",
+                "reference": "28b114daf9b0f01791f7a3139ab850fdffd9033a",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-04-02T12:33:51+00:00"
+            "time": "2020-04-16T13:16:05+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -6357,6 +6357,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -6403,6 +6404,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -6703,7 +6705,7 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-03-20T15:30:42+00:00"
+            "time": "2020-04-03T12:35:08+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -6807,7 +6809,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-04-01T17:18:19+00:00"
+            "time": "2020-04-03T12:36:00+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
