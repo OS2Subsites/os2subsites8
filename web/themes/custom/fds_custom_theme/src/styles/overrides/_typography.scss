@@ -30,6 +30,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
+  margin-top: 30px;
+
   font-family: $headings-font-family;
   font-weight: 700;
 
@@ -39,6 +41,17 @@ h6, .h6 {
   + .body-text {
     margin-top: 0;
   }
+}
+
+h2, .h2,
+h3, .h3 {
+  margin-bottom: 10px;
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-bottom: 5px;
 }
 
 p, .body-text {
@@ -67,28 +80,7 @@ p, .body-text {
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  h1, .h1,
-  h2, .h2,
-  h3, .h3,
-  h4, .h4,
-  h5, .h5,
-  h6, .h6 {
-    margin-top: 30px;
-  }
-
-  h2, .h2,
-  h3, .h3 {
-    margin-bottom: 22px;
-  }
-
-  h4, .h4,
-  h5, .h5,
-  h6, .h6 {
-    margin-bottom: 18px;
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
