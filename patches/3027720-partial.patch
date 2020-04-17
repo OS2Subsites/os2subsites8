@@ -1,0 +1,17 @@
+diff --git a/js/ImageWidgetCropType.js b/js/ImageWidgetCropType.js
+index 3a65aa5..6855ca8 100644
+--- a/js/ImageWidgetCropType.js
++++ b/js/ImageWidgetCropType.js
+@@ -660,6 +660,12 @@
+     if (delta && name !== 'applied') {
+       value = Math.round(value * delta);
+     }
++
++    // Bind height and width to image size when below hard limit. Solves floating-point bug.
++    if (value < this.hardLimit[name]) {
++      value = name === 'width' ? this.originalWidth : name === 'height' ? this.originalHeight : null;
++    }
++
+     this.values[name][0].value = value;
+     this.values[name].trigger('change.iwc, input.iwc');
+   };

@@ -111,6 +111,9 @@
         "patches": {
             "drupal/core": {
                 "3016038 - Unrecognised entity operation passed to Menu Link Content throws exceptions": "https://www.drupal.org/files/issues/2019-02-21/3016038-5.patch"
+            },
+            "drupal/image_widget_crop": {
+                "3027720 - Crop box is sometimes not restored correctly": "patches/3027720-partial.patch"
             }
         }
     }
