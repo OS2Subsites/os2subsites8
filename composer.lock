@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "843a9d61c8756f00a9e95727d2d07505",
+    "content-hash": "9c533dea1f3ba85bfa5ce11f5422aea9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "28b114daf9b0f01791f7a3139ab850fdffd9033a"
+                "reference": "4d7fa12e2f6baaa926ef75263ed304b619f07389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/28b114daf9b0f01791f7a3139ab850fdffd9033a",
-                "reference": "28b114daf9b0f01791f7a3139ab850fdffd9033a",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/4d7fa12e2f6baaa926ef75263ed304b619f07389",
+                "reference": "4d7fa12e2f6baaa926ef75263ed304b619f07389",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-04-16T13:16:05+00:00"
+            "time": "2020-04-20T08:51:44+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -4606,6 +4606,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "3124459 - Hard limit edge case issue": "https://www.drupal.org/files/issues/2020-04-02/fix_hard_limit_edge_case.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
