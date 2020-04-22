@@ -21,11 +21,16 @@
 // --------------------------------------------------
 
 .paragraph--type--os2web-banner-paragraph {
+  min-height: 372px - (40px * 2);
+
   padding: 40px 0;
 
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-color: $color-gray-006;
+  background-position: center center;
+
+  box-sizing: border-box;
 }
 
 // --------------------------------------------------
@@ -46,6 +51,8 @@
 @include media-breakpoint-up(sm) {
 
   .paragraph--type--os2web-banner-paragraph {
+    min-height: 372px - (60px * 2);
+
     padding: 60px 0;
   }
 }
