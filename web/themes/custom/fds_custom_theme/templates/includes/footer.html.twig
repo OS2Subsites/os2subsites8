@@ -52,10 +52,59 @@
                 </p>
               {% endif %}
 
-              {% if theme_settings.contact_information.working_hours %}
-                <p>
-                  {{ theme_settings.contact_information.working_hours }}
-                </p>
+              {% if theme_settings.contact_information.working_hours__row_1__day and working_hours__row_1__time %}
+                <div class="row">
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_1__day }}
+                  </div>
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_1__time }}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if theme_settings.contact_information.working_hours__row_2__day and working_hours__row_2__time %}
+                <div class="row">
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_2__day }}
+                  </div>
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_2__time }}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if theme_settings.contact_information.working_hours__row_3__day and working_hours__row_3__time %}
+                <div class="row">
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_3__day }}
+                  </div>
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_3__time }}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if theme_settings.contact_information.working_hours__row_4__day and working_hours__row_4__time %}
+                <div class="row">
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_4__day }}
+                  </div>
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_4__time }}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if theme_settings.contact_information.working_hours__row_5__day and working_hours__row_5__time %}
+                <div class="row">
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_5__day }}
+                  </div>
+                  <div class="col-xs-6">
+                    {{ theme_settings.contact_information.working_hours__row_5__time }}
+                  </div>
+                </div>
               {% endif %}
 
             </div>
