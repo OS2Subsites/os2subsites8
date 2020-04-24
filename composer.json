@@ -49,7 +49,7 @@
         "os2web/os2web_banner": "dev-master",
         "os2web/os2web_hjemmeside": "dev-master",
         "os2web/os2web_pagebuilder": "dev-master",
-        "os2web/os2web_spotbox": "dev-develop",
+        "os2web/os2web_spotbox": "dev-master",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"

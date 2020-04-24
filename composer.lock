@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db41f8efe615b7cde185208e7bd75e49",
+    "content-hash": "cd201e5b8dd4d697f1d00a1986c4a98f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6700,7 +6700,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-04-20T09:32:23+00:00"
+            "time": "2020-04-24T10:12:40+00:00"
         },
         {
             "name": "os2web/os2web_banner",
@@ -6708,12 +6708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_banner.git",
-                "reference": "7c7d35df8546ecb2671cd0996d65d5f4a0b0becb"
+                "reference": "548c4e5e06ea8a56daaa362bdbc979429d366a3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_banner/zipball/7c7d35df8546ecb2671cd0996d65d5f4a0b0becb",
-                "reference": "7c7d35df8546ecb2671cd0996d65d5f4a0b0becb",
+                "url": "https://api.github.com/repos/OS2web/os2web_banner/zipball/548c4e5e06ea8a56daaa362bdbc979429d366a3b",
+                "reference": "548c4e5e06ea8a56daaa362bdbc979429d366a3b",
                 "shasum": ""
             },
             "require": {
@@ -6735,12 +6735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "0a88dcc78013a070ba1cc63874f670471e9f2cca"
+                "reference": "929cc9f90cd279c96c352c48d0858f3ab1a0fec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/0a88dcc78013a070ba1cc63874f670471e9f2cca",
-                "reference": "0a88dcc78013a070ba1cc63874f670471e9f2cca",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/929cc9f90cd279c96c352c48d0858f3ab1a0fec2",
+                "reference": "929cc9f90cd279c96c352c48d0858f3ab1a0fec2",
                 "shasum": ""
             },
             "require": {
@@ -6787,12 +6787,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "1e9f09afc45de5ce7bfb810337483f77ee3b4b77"
+                "reference": "c1c39cfc27ba9e0a2131c668f7b5dcbd56bd75f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/1e9f09afc45de5ce7bfb810337483f77ee3b4b77",
-                "reference": "1e9f09afc45de5ce7bfb810337483f77ee3b4b77",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/c1c39cfc27ba9e0a2131c668f7b5dcbd56bd75f2",
+                "reference": "c1c39cfc27ba9e0a2131c668f7b5dcbd56bd75f2",
                 "shasum": ""
             },
             "require": {
@@ -6835,12 +6835,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "2ca45efb96ae0500e4b0d59a2b2288021eeee99b"
+                "reference": "7f217f4ad0ba7c2318ebec0473778f461876f1a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/2ca45efb96ae0500e4b0d59a2b2288021eeee99b",
-                "reference": "2ca45efb96ae0500e4b0d59a2b2288021eeee99b",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/7f217f4ad0ba7c2318ebec0473778f461876f1a4",
+                "reference": "7f217f4ad0ba7c2318ebec0473778f461876f1a4",
                 "shasum": ""
             },
             "require": {
@@ -6858,7 +6858,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-04-03T12:36:00+00:00"
+            "time": "2020-04-23T10:06:52+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -6912,21 +6912,22 @@
         },
         {
             "name": "os2web/os2web_spotbox",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "ae2300a407190c867d1dca1e6348dceed1235d55"
+                "reference": "004873ad27c02bf7e85530189249081e716a7c50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/ae2300a407190c867d1dca1e6348dceed1235d55",
-                "reference": "ae2300a407190c867d1dca1e6348dceed1235d55",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/004873ad27c02bf7e85530189249081e716a7c50",
+                "reference": "004873ad27c02bf7e85530189249081e716a7c50",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "*",
                 "drupal/crop": "*",
+                "drupal/image_widget_crop": "*",
                 "drupal/inline_entity_form": "^1.0@RC",
                 "drupal/paragraphs": "*"
             },
@@ -6936,7 +6937,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-04-01T17:16:44+00:00"
+            "time": "2020-04-22T13:43:03+00:00"
         },
         {
             "name": "paragonie/random_compat",
