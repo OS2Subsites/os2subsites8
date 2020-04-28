@@ -6860,17 +6860,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "c1c39cfc27ba9e0a2131c668f7b5dcbd56bd75f2"
+                "reference": "f1c16743cc3b7da5583f40adaa40ea8542136a9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/c1c39cfc27ba9e0a2131c668f7b5dcbd56bd75f2",
-                "reference": "c1c39cfc27ba9e0a2131c668f7b5dcbd56bd75f2",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/f1c16743cc3b7da5583f40adaa40ea8542136a9c",
+                "reference": "f1c16743cc3b7da5583f40adaa40ea8542136a9c",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "*",
-                "os2web/os2web": "8.x-dev"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -6878,7 +6877,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-04-24T14:34:56+00:00"
+            "time": "2020-04-28T14:20:33+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
