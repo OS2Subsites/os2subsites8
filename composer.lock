@@ -6860,12 +6860,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "f1c16743cc3b7da5583f40adaa40ea8542136a9c"
+                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/f1c16743cc3b7da5583f40adaa40ea8542136a9c",
-                "reference": "f1c16743cc3b7da5583f40adaa40ea8542136a9c",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
+                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
                 "shasum": ""
             },
             "require": {
