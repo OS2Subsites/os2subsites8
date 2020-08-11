@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3a6fd6f35dc16ee691321fcc652224f",
+    "content-hash": "37aa5daec6ebf045f1c67aa224c072d3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3721,6 +3721,76 @@
             }
         },
         {
+            "name": "drupal/drush_language",
+            "version": "1.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/drush_language.git",
+                "reference": "8.x-1.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/drush_language-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "6d72a0505fac3153d663de3744271129b048762b"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "webmozart/path-util": "^2.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc3",
+                    "datestamp": "1588522983",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "gurvan",
+                    "homepage": "https://www.drupal.org/user/852194"
+                },
+                {
+                    "name": "ndf",
+                    "homepage": "https://www.drupal.org/user/599438"
+                },
+                {
+                    "name": "the greenman",
+                    "homepage": "https://www.drupal.org/user/19836"
+                },
+                {
+                    "name": "xatoo",
+                    "homepage": "https://www.drupal.org/user/103227"
+                }
+            ],
+            "description": "Provides Drush commands for language manipulation",
+            "homepage": "https://www.drupal.org/project/drush_language",
+            "support": {
+                "source": "https://git.drupalcode.org/project/drush_language"
+            }
+        },
+        {
             "name": "drupal/dynamic_entity_reference",
             "version": "1.8.0",
             "source": {
@@ -4573,29 +4643,29 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "1.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "e8aa3fae5c3c5dec84644bb577996938d638a611"
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "8a719eaea594f0ba874172831cb28da93c66b77a"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/jquery_ui_accordion": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1510352885",
+                    "version": "8.x-3.1",
+                    "datestamp": "1591772567",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4604,7 +4674,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4631,7 +4701,8 @@
             "description": "Provides the field_group module.",
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
-                "source": "https://git.drupalcode.org/project/field_group"
+                "source": "https://git.drupalcode.org/project/field_group",
+                "issues": "https://www.drupal.org/project/issues/field_group"
             }
         },
         {
@@ -7078,12 +7149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "0ba9b9a2f83364e99443f78da6bf7d4e5fda9429"
+                "reference": "5bf9d0b7d444c0790e8ab635df4fb41765a8c107"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/0ba9b9a2f83364e99443f78da6bf7d4e5fda9429",
-                "reference": "0ba9b9a2f83364e99443f78da6bf7d4e5fda9429",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/5bf9d0b7d444c0790e8ab635df4fb41765a8c107",
+                "reference": "5bf9d0b7d444c0790e8ab635df4fb41765a8c107",
                 "shasum": ""
             },
             "require": {
@@ -7098,6 +7169,7 @@
                 "drupal/core": "^8",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/ctools": "^3.2",
+                "drupal/drush_language": "^1.0@RC",
                 "drupal/easy_breadcrumb": "^1.12",
                 "drupal/editor_advanced_link": "^1.4",
                 "drupal/embed": "^1.0",
@@ -7107,7 +7179,7 @@
                 "drupal/environment_indicator": "^3.7",
                 "drupal/eu_cookie_compliance": "^1.8",
                 "drupal/extlink": "^1.1",
-                "drupal/field_group": "^1.0",
+                "drupal/field_group": "^3.1",
                 "drupal/honeypot": "^1.29",
                 "drupal/image_widget_crop": "^2.1",
                 "drupal/inline_entity_form": "^1.0",
@@ -7133,7 +7205,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-04-28T14:06:29+00:00"
+            "time": "2020-08-11T07:29:35+00:00"
         },
         {
             "name": "os2web/os2web",
