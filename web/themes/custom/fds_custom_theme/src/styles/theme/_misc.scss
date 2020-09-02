@@ -23,3 +23,13 @@ body a {
     background-color: $color-primary;
   }
 }
+
+.background-color--primary {
+  background-color: $color-primary !important;
+}
+.background-color--secondary {
+  background-color: $color-green-002 !important;
+}
+.background-color--tertiary {
+  background-color: $color-gray-002 !important;
+}

@@ -30,26 +30,30 @@
 // Variants
 // --------------------------------------------------
 
-.box--primary {
-  background-color: $color-primary;
+.box {
 
-  .box__heading {
+  &.background-color--primary,
+  &.background-color--secondary,
+  &.background-color--tertiary {
 
-    h1, h2, h3, h4, h5, h6 {
-      color: #fff;
-    }
-  }
+    .box__heading {
 
-  .box__body {
-
-    &, p, .body-text {
-      color: #fff;
-    }
-
-    a {
-
-      &, &:hover, &:focus, &:visited {
+      h1, h2, h3, h4, h5, h6 {
         color: #fff;
+      }
+    }
+
+    .box__body {
+
+      &, p, .body-text {
+        color: #fff;
+      }
+
+      a {
+
+        &, &:hover, &:focus, &:visited {
+          color: #fff;
+        }
       }
     }
   }
