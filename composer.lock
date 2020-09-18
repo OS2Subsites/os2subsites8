@@ -7988,16 +7988,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e"
+                "reference": "d7ac998ec49d46256ecc840433c9445e50deb6f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
-                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/d7ac998ec49d46256ecc840433c9445e50deb6f7",
+                "reference": "d7ac998ec49d46256ecc840433c9445e50deb6f7",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "*",
+                "drupal/metatag": "*"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -8005,7 +8006,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-06-22T10:47:42+00:00"
+            "time": "2020-08-27T09:00:51+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -8062,12 +8063,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "e8bb5cdfcbf4f9cbdfec1b2d492bf731c1bda4b4"
+                "reference": "51e376752bc1ae9cf991129a3a8189adc8bc4168"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/e8bb5cdfcbf4f9cbdfec1b2d492bf731c1bda4b4",
-                "reference": "e8bb5cdfcbf4f9cbdfec1b2d492bf731c1bda4b4",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/51e376752bc1ae9cf991129a3a8189adc8bc4168",
+                "reference": "51e376752bc1ae9cf991129a3a8189adc8bc4168",
                 "shasum": ""
             },
             "require": {
@@ -8086,7 +8087,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-08-19T17:02:12+00:00"
+            "time": "2020-09-15T12:18:44+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -13537,24 +13538,25 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.7",
+            "version": "8.3.8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coder.git",
-                "reference": "c11c2957653bdbfd68adc851692d094b43d39221"
+                "reference": "e53e75b45842a5d2b454b08c318a17f57339e60e"
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.5.9",
-                "squizlabs/php_codesniffer": "^3.4.1",
+                "php": ">=7.0.8",
+                "squizlabs/php_codesniffer": "^3.5.4",
                 "symfony/yaml": ">=2.0.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "phpstan/phpstan": "^0.12.5",
+                "phpunit/phpunit": "^6.0 || ^7.0"
             },
             "type": "phpcodesniffer-standard",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Drupal\\": "coder_sniffer/Drupal/",
                     "DrupalPractice\\": "coder_sniffer/DrupalPractice/"
                 }
@@ -13570,7 +13572,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-12-07T16:00:28+00:00"
+            "time": "2020-03-08T19:03:35+00:00"
         },
         {
             "name": "drupal/core-dev",
@@ -15610,6 +15612,5 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
