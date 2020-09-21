@@ -8014,12 +8014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_kle.git",
-                "reference": "27fe808e0807109e8862f56647fb24653b6f143c"
+                "reference": "059f2194a429f6c6b1491d028650454477ed6ebd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/27fe808e0807109e8862f56647fb24653b6f143c",
-                "reference": "27fe808e0807109e8862f56647fb24653b6f143c",
+                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/059f2194a429f6c6b1491d028650454477ed6ebd",
+                "reference": "059f2194a429f6c6b1491d028650454477ed6ebd",
                 "shasum": ""
             },
             "require": {

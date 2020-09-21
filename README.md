@@ -47,3 +47,16 @@ See [OS2Web code review policy](https://github.com/OS2Web/docs#code-review)
 
 ### Git name convention
 See [OS2Web git name convention](https://github.com/OS2Web/docs#git-guideline)
+
+## Develompent
+
+In case you had issues during subsites installation process, you can try to
+reproduce in locally on your local machine via Drush.
+Steps:
+1. Update your local db with recent changes from project configuration fo which
+you suppose to use.
+2. Export configuration to sync folder. Usually it will be `config/sync`.
+3. Run installation process from existing config:
+```
+drush si --existing-config
+```
