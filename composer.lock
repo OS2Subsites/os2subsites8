@@ -7901,7 +7901,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-04-28T14:01:08+00:00"
+            "time": "2020-08-19T08:30:02+00:00"
         },
         {
             "name": "os2web/os2web_banner",
@@ -8014,12 +8014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_kle.git",
-                "reference": "059f2194a429f6c6b1491d028650454477ed6ebd"
+                "reference": "5e1a4681675738d39ea5d5d122038509c952475a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/059f2194a429f6c6b1491d028650454477ed6ebd",
-                "reference": "059f2194a429f6c6b1491d028650454477ed6ebd",
+                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/5e1a4681675738d39ea5d5d122038509c952475a",
+                "reference": "5e1a4681675738d39ea5d5d122038509c952475a",
                 "shasum": ""
             },
             "require": {
@@ -8033,7 +8033,7 @@
                 "EUPL-1.2"
             ],
             "description": "KLE terms import functionality",
-            "time": "2020-08-04T06:57:55+00:00"
+            "time": "2020-09-23T11:52:18+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
