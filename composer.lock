@@ -8014,12 +8014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_kle.git",
-                "reference": "5e1a4681675738d39ea5d5d122038509c952475a"
+                "reference": "2f13a48eb7a3612335b2f1204ae4fcae97e0bc88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/5e1a4681675738d39ea5d5d122038509c952475a",
-                "reference": "5e1a4681675738d39ea5d5d122038509c952475a",
+                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/2f13a48eb7a3612335b2f1204ae4fcae97e0bc88",
+                "reference": "2f13a48eb7a3612335b2f1204ae4fcae97e0bc88",
                 "shasum": ""
             },
             "require": {
@@ -8033,7 +8033,7 @@
                 "EUPL-1.2"
             ],
             "description": "KLE terms import functionality",
-            "time": "2020-09-23T11:52:18+00:00"
+            "time": "2020-09-28T08:49:44+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
