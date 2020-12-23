@@ -8556,12 +8556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "d6a053cbf674ecddbb955757b8f9d07d24dde7ff"
+                "reference": "57f73fb6939d15049e6667c00d824236d4f2cbf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/d6a053cbf674ecddbb955757b8f9d07d24dde7ff",
-                "reference": "d6a053cbf674ecddbb955757b8f9d07d24dde7ff",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/57f73fb6939d15049e6667c00d824236d4f2cbf6",
+                "reference": "57f73fb6939d15049e6667c00d824236d4f2cbf6",
                 "shasum": ""
             },
             "require": {
