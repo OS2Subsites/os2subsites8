@@ -278,28 +278,31 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "^4.8.36"
+                "composer/composer": "1.6.* || 2.0.*@dev",
+                "composer/semver": "1.0.* || 2.0.*@dev",
+                "phpunit/phpunit": "^4.8.36",
+                "sebastian/comparator": "^1.2.4",
+                "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
@@ -398,7 +401,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2020-02-07T10:39:20+00:00"
+            "time": "2020-04-07T06:57:05+00:00"
         },
         {
             "name": "composer/semver",
@@ -9523,20 +9526,20 @@
         },
         {
             "name": "simplesamlphp/composer-module-installer",
-            "version": "v1.1.6",
+            "version": "v1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/composer-module-installer.git",
-                "reference": "b70414a2112fe49e97a7eddd747657bd8bc38ef0"
+                "reference": "45161b5406f3e9c82459d0f9a5a1dba064953cfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/composer-module-installer/zipball/b70414a2112fe49e97a7eddd747657bd8bc38ef0",
-                "reference": "b70414a2112fe49e97a7eddd747657bd8bc38ef0",
+                "url": "https://api.github.com/repos/simplesamlphp/composer-module-installer/zipball/45161b5406f3e9c82459d0f9a5a1dba064953cfa",
+                "reference": "45161b5406f3e9c82459d0f9a5a1dba064953cfa",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
+                "composer-plugin-api": "^1.1|^2.0",
                 "simplesamlphp/simplesamlphp": "*"
             },
             "type": "composer-plugin",
@@ -9549,8 +9552,11 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
             "description": "A Composer plugin that allows installing SimpleSAMLphp modules through Composer.",
-            "time": "2017-04-24T07:12:50+00:00"
+            "time": "2020-08-25T19:04:33+00:00"
         },
         {
             "name": "simplesamlphp/saml2",
