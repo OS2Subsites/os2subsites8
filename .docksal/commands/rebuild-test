@@ -23,7 +23,7 @@ echo-yellow "Fetching composer dependencies"
 fin composer install
 
 echo-yellow "Installing drupal based on os2web profile"
-fin drush si os2web --account-pass=admin -y -vvv
+fin drush si os2web --db-url=mysql://root:root@db/default  --account-pass=admin -y -vvv
 
 echo-yellow "Enable theme and modules"
 fin drush theme:enable fds_custom_theme
