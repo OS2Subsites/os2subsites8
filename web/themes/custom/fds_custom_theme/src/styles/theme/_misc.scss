@@ -12,6 +12,11 @@ body a {
   }
 }
 
+.accordion-button {
+  font-size: 2rem;
+  font-weight: $font-weight-bold;
+}
+
 .paragraph a,
 .region-content a,
 .breadcrumb a {
