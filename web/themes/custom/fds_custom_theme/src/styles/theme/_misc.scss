@@ -12,6 +12,10 @@ body a {
   }
 }
 
+.fake-link {
+  color: $color-link;
+}
+
 .accordion-button {
   font-size: 2rem;
   font-weight: $font-weight-bold;

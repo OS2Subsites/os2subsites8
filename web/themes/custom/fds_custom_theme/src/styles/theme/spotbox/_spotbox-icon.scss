@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Spotbox image type
+// | Spotbox icon type
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .os2web-spotbox--image
+// | - .os2web-spotbox--icon
 // |
 
 // --------------------------------------------------
@@ -20,29 +20,10 @@
 // Styling
 // --------------------------------------------------
 
-.os2web-spotbox--image {
+.os2web-spotbox--icon {
 
-  a {
-    text-decoration: none;
-    color: $color-text;
-  }
-
-  .os2web-spotbox__image {
-    display: block;
-
-    line-height: 0;
-
-    img {
-      width: 100%;
-
-      height: auto;
-    }
-  }
-
-  .os2web-spotbox__text {
-    display: block;
-
-    padding: 20px;
+  &:hover {
+    opacity: .9;
   }
 }
 
@@ -61,8 +42,7 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {
-}
+@include media-breakpoint-up(sm) {}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
