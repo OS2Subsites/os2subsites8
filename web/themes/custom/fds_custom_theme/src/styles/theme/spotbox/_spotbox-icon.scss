@@ -20,10 +20,35 @@
 // Styling
 // --------------------------------------------------
 
-.os2web-spotbox--icon {
+.spotbox--icon {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+
+  user-select: none;
 
   &:hover {
     opacity: .9;
+  }
+
+  &:focus {
+    color: $color-text !important;
+    background-color: transparent !important;
+  }
+
+  .field--name-field-os2web-spotbox-heading {
+    margin-bottom: .4rem;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+  }
+
+  .field--name-field-os2web-spotbox-link-text {
+
+    + div {
+      margin-top: .4rem;
+    }
   }
 }
 
