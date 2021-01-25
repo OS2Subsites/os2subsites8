@@ -8621,12 +8621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "147d55928a7f494a117d6339c4acdf2a6a93f208"
+                "reference": "55e9a6179b06b6708933086fe8cdf9b177faf480"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/147d55928a7f494a117d6339c4acdf2a6a93f208",
-                "reference": "147d55928a7f494a117d6339c4acdf2a6a93f208",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/55e9a6179b06b6708933086fe8cdf9b177faf480",
+                "reference": "55e9a6179b06b6708933086fe8cdf9b177faf480",
                 "shasum": ""
             },
             "require": {
