@@ -12,6 +12,10 @@ body a {
   }
 }
 
+a.element-wrapper-link {
+  max-width: unset;
+}
+
 .fake-link {
   color: $color-link;
 }
