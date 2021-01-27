@@ -27,6 +27,8 @@
 
   user-select: none;
 
+  color: $color-text !important;
+
   &:hover {
     opacity: .9;
   }
@@ -35,6 +37,8 @@
     color: $color-text !important;
     background-color: transparent !important;
   }
+
+  .field--name-field-os2web-spotbox-icon {}
 
   .field--name-field-os2web-spotbox-heading {
     margin-bottom: .4rem;
@@ -45,6 +49,8 @@
   }
 
   .field--name-field-os2web-spotbox-link-text {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
     + div {
       margin-top: .4rem;
