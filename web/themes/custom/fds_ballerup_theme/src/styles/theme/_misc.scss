@@ -155,13 +155,13 @@ body .page-container {
   }
 
   .block {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
 
     &:first-child {
-      padding-top: $grid-gutter-width;
     }
 
     &:last-child {
-      padding-bottom: $grid-gutter-width;
     }
   }
 
@@ -170,14 +170,53 @@ body .page-container {
   }
 }
 
-.path-frontpage {
+//.path-frontpage {
+//
+//  .layout-sidebar-left,
+//  .layout-sidebar-right {
+//    display: none;
+//  }
+//}
+.block-os2web-pagebuilder-related-links {
 
-  .layout-sidebar-left,
-  .layout-sidebar-right {
-    display: none;
+  ul.related-links {
+    margin-bottom: 0;
   }
 }
 
+.block-os2web-contact,
+.block-os2web-pagebuilder-related-links {
+
+  .box__heading {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: transparent;
+  }
+}
+
+.layout-sidebar-left,
+.layout-sidebar-right {
+
+  h1, h2, h3, h4, h5, h6 {
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
 .layout-sidebar-left,
 .layout-sidebar-right,
 .layout-content {
@@ -309,26 +348,6 @@ body {
   }
   a:not(.button){
     max-width: unset;
-  }
-}
-
-// Hide all other content, than the wide one on section pages and frontpages.
-.section--social-icon-teasers {
-  display: none;
-}
-
-.path-frontpage,
-.path-node-3235,
-.path-node-3366,
-.path-node-3323,
-.path-node-3347 {
-
-  .section--social-icon-teasers {
-    display: block;
-  }
-
-  .layout--hidden-on-sections {
-    display: none !important;
   }
 }
 

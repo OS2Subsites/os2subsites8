@@ -37,6 +37,24 @@
 // Variants
 // --------------------------------------------------
 
+.section--municipality-branding {
+  text-align: center;
+
+  background-image: url("../images/watermark.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right 150px top -100px;
+  background-color: #193c61;
+
+  .logo {
+    margin: auto;
+
+    img {
+      max-height: 61px;
+    }
+  }
+}
+
 .section--alert {
   padding-top: 20px;
   padding-bottom: 20px;

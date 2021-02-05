@@ -20,6 +20,13 @@
 // Styling
 // --------------------------------------------------
 
+.region-header__main-navigation {
+
+  + .region-small-search {
+    margin-left: 3rem;
+  }
+}
+
 .custom-header {
   background-color: #fff;
 

@@ -17,7 +17,7 @@ function fds_ballerup_theme_preprocess_page(array &$variables) {
  * Implements hook_form_search_block_form_alter().
  */
 function fds_ballerup_theme_form_search_block_form_alter(&$form, FormStateInterface $form_state) {
-  $form['keys']['#attributes']['placeholder'] = t('Find hvad du leder efter');
+  $form['keys']['#attributes']['placeholder'] = t('Hvad søger du?');
 }
 
 /**
