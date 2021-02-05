@@ -20,53 +20,18 @@
 // Styling
 // --------------------------------------------------
 
-.banner {
-  padding: 40px 0;
+.banner {}
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: $color-gray-006;
-}
-
-.banner__box {
-  padding: 20px;
-
-  background-color: rgba(255, 255, 255, .9);
-}
+.banner__box {}
 
 .banner__heading {
 
   h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-
     font-size: 2.82353em;
   }
-
-  + .banner__body,
-  + .banner__actions {
-    margin-top: 15px;
-  }
-}
-.banner__body {
-
-  p {
-
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  + .banner__actions {
-    margin-top: 15px;
-  }
 }
 
-.banner__actions {
-  margin-bottom: -40px;
-}
+.banner__body {}
 
 // --------------------------------------------------
 // Variants
@@ -83,22 +48,13 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {
-
-  .banner {
-    padding: 60px 0;
-  }
-}
+@include media-breakpoint-up(sm) {}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-  .banner__box {
-    max-width: 50%;
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
