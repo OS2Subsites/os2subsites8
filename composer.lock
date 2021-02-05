@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60933ab99a27095d2113de1236812ec2",
+    "content-hash": "35d397fb921037f6351d64b75db0e3ee",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "e97afbdadf863cb098e4495fea251fd075e29a04"
+                "reference": "501a32a5a44e969e9a79568052d8507e5022b8bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/e97afbdadf863cb098e4495fea251fd075e29a04",
-                "reference": "e97afbdadf863cb098e4495fea251fd075e29a04",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/501a32a5a44e969e9a79568052d8507e5022b8bd",
+                "reference": "501a32a5a44e969e9a79568052d8507e5022b8bd",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -6065,6 +6065,72 @@
             }
         },
         {
+            "name": "drupal/smart_trim",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_trim.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_trim-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "5894aa067fba19a3452ed8ce749f33bd9ae91907"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1589766531",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Casias (markie)",
+                    "homepage": "https://www.drupal.org/u/markie",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "chrisjlee",
+                    "homepage": "https://www.drupal.org/user/760600"
+                },
+                {
+                    "name": "drywall",
+                    "homepage": "https://www.drupal.org/user/192591"
+                },
+                {
+                    "name": "jsenich",
+                    "homepage": "https://www.drupal.org/user/58871"
+                },
+                {
+                    "name": "markie",
+                    "homepage": "https://www.drupal.org/user/206687"
+                },
+                {
+                    "name": "newsignature",
+                    "homepage": "https://www.drupal.org/user/765518"
+                }
+            ],
+            "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
+            "homepage": "https://drupal.org/project/smart_trim",
+            "support": {
+                "source": "https://cgit.drupalcode.org/smart_trim",
+                "issues": "https://drupal.org/project/issues/smart_trim"
+            }
+        },
+        {
             "name": "drupal/smtp",
             "version": "1.0.0-beta7",
             "source": {
@@ -6510,6 +6576,62 @@
             "homepage": "http://drupal.org/project/upgrade_status",
             "support": {
                 "source": "https://git.drupalcode.org/project/upgrade_status"
+            }
+        },
+        {
+            "name": "drupal/video_embed_field",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/video_embed_field.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "96b14bb93c1bb6a07b84315a4f87367870f8b574"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/colorbox": "^1.0",
+                "drupal/video_embed_media": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1587686337",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "jec006",
+                    "homepage": "https://www.drupal.org/user/855980"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                }
+            ],
+            "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/video_embed_field"
             }
         },
         {
@@ -8532,6 +8654,38 @@
             ],
             "description": "Provide authentication via Nemlogin",
             "time": "2019-12-12T10:30:44+00:00"
+        },
+        {
+            "name": "os2web/os2web_news",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_news.git",
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/8c190b1fd4a918b87417d0c3615e22caa77a33a0",
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/smart_trim": "^1.3",
+                "drupal/video_embed_field": "*"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "News entity",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_news/issues",
+                "source": "https://github.com/OS2web/os2web_news/tree/master"
+            },
+            "time": "2021-01-14T09:23:59+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
@@ -16244,6 +16398,7 @@
         "os2web/os2web": 20,
         "os2web/os2web_banner": 20,
         "os2web/os2web_hjemmeside": 20,
+        "os2web/os2web_news": 20,
         "os2web/os2web_pagebuilder": 20,
         "os2web/os2web_spotbox": 20
     },
@@ -16252,5 +16407,6 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
