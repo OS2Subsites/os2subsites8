@@ -265,36 +265,37 @@ a.spotbox {
 }
 
 .spotbox--image {
+  position: relative;
 
-  .spotbox__image {
+  overflow: hidden;
+  border-radius: 4px;
 
-    img {
-      width: 100%;
-    }
+  img {
+    display: block;
+
+    width: 100%;
   }
 
   .spotbox__content {
-    padding-top: 10px;
-    padding-left: 20px;
-
-    padding-right: 3rem;
-  }
-
-  &:after {
-    display: flex;
     position: absolute;
 
-    right: 10px;
-    bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-    align-items: center;
+    padding: 25px 15px !important;
 
-    font-size: 3rem;
-    font-family: "Material Icons";
-    content: "keyboard_backspace";
-    transform: rotate(180deg);
+    color: #fff;
+    background-color: rgba($color-primary, .9);
+  }
 
-    color: $color-orange-004;
+  .field--name-field-os2web-spotbox-heading {
+
+    h1, h2, h3, h4, h5, h6 {
+      text-transform: uppercase;
+
+      color: #fff;
+    }
   }
 }
 
@@ -457,16 +458,6 @@ a.spotbox {
       height: 200px;
     }
   }
-
-  .spotbox--image {
-
-    .spotbox__image {
-
-      img {
-        height: 200px;
-      }
-    }
-  }
 }
 
 .paragraph--grid_3 {
@@ -510,17 +501,6 @@ a.spotbox {
             right: auto;
             left: 3rem;
             bottom: 1.5rem;
-          }
-        }
-
-        .spotbox--image {
-
-          .spotbox__image {
-            height: 285px;
-
-            img {
-              height: 285px;
-            }
           }
         }
       }
@@ -626,61 +606,6 @@ a.spotbox {
 
     &:after {
       right: 30px;
-    }
-  }
-
-  .spotbox--image {
-
-    [class*="col-"] {
-      display: flex;
-
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-
-
-  .spotbox--image {
-
-    .spotbox__image {
-      display: flex;
-
-      padding-top: 0;
-      padding-left: 0;
-      padding-right: 0;
-
-      height: 150px;
-
-      flex-grow: 1;
-      align-items: center;
-
-      overflow: hidden;
-
-      img {
-        display: flex;
-
-        width: auto;
-        height: 150px;
-        max-width: initial;
-      }
-    }
-
-    .spotbox__content {
-      display: flex;
-
-      padding-top: 35px;
-      padding-bottom: 35px;
-      padding-left: 0;
-
-      justify-content: center;
-      flex-direction: column;
-
-      height: 150px;
-    }
-
-    &:after {
-      right: 20px;
-      bottom: 20px;
     }
   }
 }
