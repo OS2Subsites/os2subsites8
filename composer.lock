@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7aec559b44137ad85d09578b91f7780c",
+    "content-hash": "ed72ca5ee77f937958849b59029fa4b0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -149,16 +149,16 @@
         },
         {
             "name": "bellcom/os2subsites_provision",
-            "version": "1.0.0",
+            "version": "dev-docker",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2subsite_provision.git",
-                "reference": "356fbbe4ceb1dd6577dd50b0012f205ca4e169ad"
+                "reference": "d76de2a752fa9745bd52f3fe7c88cdc3021ee2f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/356fbbe4ceb1dd6577dd50b0012f205ca4e169ad",
-                "reference": "356fbbe4ceb1dd6577dd50b0012f205ca4e169ad",
+                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/d76de2a752fa9745bd52f3fe7c88cdc3021ee2f7",
+                "reference": "d76de2a752fa9745bd52f3fe7c88cdc3021ee2f7",
                 "shasum": ""
             },
             "require": {
@@ -172,9 +172,9 @@
             "description": "Server scripts solution to manage Drupal multisite.",
             "support": {
                 "issues": "https://github.com/bellcom/os2subsite_provision/issues",
-                "source": "https://github.com/bellcom/os2subsite_provision/tree/1.0.0"
+                "source": "https://github.com/bellcom/os2subsite_provision/tree/docker"
             },
-            "time": "2021-02-23T08:35:25+00:00"
+            "time": "2021-02-10T16:25:53+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
