@@ -9697,12 +9697,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_banner.git",
-                "reference": "548c4e5e06ea8a56daaa362bdbc979429d366a3b"
+                "reference": "9fb3bc1dadd6945e7ab7a3b417eb4f84781e0ad3"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2web/os2web_banner/zipball/548c4e5e06ea8a56daaa362bdbc979429d366a3b",
-                "reference": "548c4e5e06ea8a56daaa362bdbc979429d366a3b",
+                "reference": "9fb3bc1dadd6945e7ab7a3b417eb4f84781e0ad3",
                 "shasum": ""
             },
             "require": {
