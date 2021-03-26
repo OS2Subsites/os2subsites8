@@ -9,6 +9,7 @@ RUN set -eux; \
 		wget \
 		mariadb-client-10.3 \
 		pwgen \
+		zip \
 		cron \
 		sudo; \
 	docker-php-ext-install soap
@@ -26,7 +27,7 @@ RUN set -eux; \
 #	mv os2subsites8-$OS2SUBSITES8_TAG drupal
 #	DEVELOPMENT SETTINGS
 #	Loading OS2Subsites from branch to avoid development releases.
-	wget https://github.com/OS2Subsites/os2subsites8/archive/docker.zip;
+	wget https://github.com/OS2Subsites/os2subsites8/archive/docker.zip; \
 	unzip docker.zip; \
 	rm docker.zip; \
 	mv os2subsites8-docker drupal
@@ -38,7 +39,7 @@ RUN set -eux; \
 	composer global require hirak/prestissimo;\
 	COMPOSER_MEMORY_LIMIT=-1 composer install; \
 	chown -R www-data:www-data web/sites web/modules web/themes; \
-	chmod +x scripts/os2subsites_provision/*.sh
+	chmod +x scripts/os2subsites_provision/*.sh; \
 	# delete composer cache.
 	rm -rf "$COMPOSER_HOME"
 
