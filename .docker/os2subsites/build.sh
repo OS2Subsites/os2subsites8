@@ -7,18 +7,21 @@ if [ $# -eq 0 ]; then
   exit 0
 fi
 
-docker build ./ --build-arg OS2SUBSITES8_TAG=$1 -t dkbellcom/os2subsites8:$1
+docker build ./ --build-arg OS2SUBSITES8_TAG=$1 -t os2subsites/os2subsites8:$1
 
 if [ "$2" = "--push" ]; then
-  echo "Docker login to dkbellcom. Type password:"
+  echo "Authorization to https://hub.docker.com. :"
+  echo "Login:"
+  read -s DOCKERHUB_LOGIN
+  echo "Password:"
   read -s DOCKERHUB_PASS
   echo "Authorization..."
-  echo $DOCKERHUB_PASS | docker login --username dkbellcom --password-stdin
+  echo $DOCKERHUB_PASS | docker login --username $DOCKERHUB_LOGIN --password-stdin
 
   if [ $? -eq 0 ]; then
     echo "Pushing image to docker hub ..."
-    docker push dkbellcom/os2subsites8:$1
-    echo "Check your image here https://hub.docker.com/repository/docker/dkbellcom/os2subsites8/tag"
+    docker push os2subsites/os2subsites8:$1
+    echo "Check your image here https://hub.docker.com/repository/docker/os2subsites/os2subsites8"
   else
     echo "Image is not pushed to docker hub :("
   fi;

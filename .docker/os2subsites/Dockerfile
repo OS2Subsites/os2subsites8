@@ -16,7 +16,7 @@ RUN set -eux; \
 
 # Removing standard Drupal core and loading OS2Web project.
 WORKDIR /opt
-# Getting recent state of master branch.
+
 ARG OS2SUBSITES8_TAG
 RUN set -eux; \
 	rm -rf drupal; \
@@ -65,3 +65,10 @@ COPY --chown=www-data:www-data drupal/settings.php /opt/drupal/web/sites/default
 
 # Allow www-data call scripts.
 COPY os2subsite /etc/sudoers.d/os2subsite
+
+# Adding entry point where required services could be started.
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
+
+CMD ["apache2-foreground"]
