@@ -149,16 +149,16 @@
         },
         {
             "name": "bellcom/os2subsites_provision",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2subsite_provision.git",
-                "reference": "356fbbe4ceb1dd6577dd50b0012f205ca4e169ad"
+                "reference": "c163e538e5baa5fc224a590e94ef1a80d9254b35"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/356fbbe4ceb1dd6577dd50b0012f205ca4e169ad",
-                "reference": "356fbbe4ceb1dd6577dd50b0012f205ca4e169ad",
+                "reference": "c163e538e5baa5fc224a590e94ef1a80d9254b35",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
             "description": "Server scripts solution to manage Drupal multisite.",
             "support": {
                 "issues": "https://github.com/bellcom/os2subsite_provision/issues",
-                "source": "https://github.com/bellcom/os2subsite_provision/tree/1.0.0"
+                "source": "https://github.com/bellcom/os2subsite_provision/tree/1.0.1"
             },
             "time": "2021-02-23T08:35:25+00:00"
         },
