@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "ef819aa289b2a44783363579df70d31b8f558595"
+                "reference": "fdca4258a135ce64340ee080bc83887d22f263b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/ef819aa289b2a44783363579df70d31b8f558595",
-                "reference": "ef819aa289b2a44783363579df70d31b8f558595",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/fdca4258a135ce64340ee080bc83887d22f263b9",
+                "reference": "fdca4258a135ce64340ee080bc83887d22f263b9",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-09-01T13:28:18+00:00"
+            "time": "2021-04-16T16:35:39+00:00"
         },
         {
             "name": "bellcom/os2subsites_provision",
@@ -8651,12 +8651,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "57f73fb6939d15049e6667c00d824236d4f2cbf6"
+                "reference": "72912089a945599c70ce838ad6b79e5ac5b171fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/57f73fb6939d15049e6667c00d824236d4f2cbf6",
-                "reference": "57f73fb6939d15049e6667c00d824236d4f2cbf6",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/72912089a945599c70ce838ad6b79e5ac5b171fb",
+                "reference": "72912089a945599c70ce838ad6b79e5ac5b171fb",
                 "shasum": ""
             },
             "require": {
@@ -8675,7 +8675,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-12-23T15:41:44+00:00"
+            "time": "2021-04-01T15:44:44+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
