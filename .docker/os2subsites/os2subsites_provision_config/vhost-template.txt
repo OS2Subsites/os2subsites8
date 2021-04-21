@@ -21,8 +21,8 @@
     php_value display_errors 0
     php_admin_value error_reporting 2047
     php_value error_log /dev/stderr
-    php_value error_log [basedir]/logs/[domain]/php.log
-    php_admin_value upload_max_filesize 150
+    php_admin_value upload_max_filesize 128M
+    php_admin_value post_max_size 128M
 
     php_value session.save_path [basedir]/sessions/[domain]
     php_admin_value upload_tmp_dir [basedir]/tmp/[domain]

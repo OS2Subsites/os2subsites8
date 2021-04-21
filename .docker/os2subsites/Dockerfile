@@ -44,21 +44,17 @@ RUN set -eux; \
 	rm -rf "$COMPOSER_HOME"
 
 # Adding further site specific data to image.
-RUN mkdir -p files; \
-	rm -rf /opt/drupal/web/sites/default/files; \
-	ln -sf /opt/drupal/files /opt/drupal/web/sites/default/files; \
-	mkdir -p private; \
-	# Adding syn directory.
-	mkdir -p config/sync; \
+# Adding syn directory.
+RUN mkdir -p config/default; \
 	# Adjusting ownership
-	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync /opt/drupal/tmp; \
-	chmod g+s -R /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
+	chown -R www-data:www-data /opt/drupal/config/default /opt/drupal/tmp /opt/drupal/logs; \
+	chmod g+s -R /opt/drupal/config/default /opt/drupal/logs
 
 # Adding custom apache configuration with PHP value and log settings.
 COPY apache/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Adding provisioning data to scripts.
-COPY os2subsites_provision_config /opt/drupal/os2subsites_provision_config
+COPY os2subsites_provision_config /opt/drupal/scripts/os2subsites_provision_config
 
 # Adding provisioning data to scripts.
 COPY --chown=www-data:www-data drupal/settings.php /opt/drupal/web/sites/default/settings.php
@@ -68,7 +64,10 @@ COPY os2subsite /etc/sudoers.d/os2subsite
 
 # Adding entry point where required services could be started.
 COPY entrypoint.sh /usr/bin/
-RUN chmod +x /usr/bin/entrypoint.sh
+
+# Settings corext permissions.
+RUN chmod +x /usr/bin/entrypoint.sh && chmod 0440 /etc/sudoers.d/os2subsite
+
 ENTRYPOINT ["entrypoint.sh"]
 
 CMD ["apache2-foreground"]
