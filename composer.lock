@@ -3365,16 +3365,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.13",
+            "version": "8.9.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a53db77b55a035453d7229e0c3069f8591cb4cb6"
+                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a53db77b55a035453d7229e0c3069f8591cb4cb6",
-                "reference": "a53db77b55a035453d7229e0c3069f8591cb4cb6",
+                "url": "https://api.github.com/repos/drupal/core/zipball/84796e158cd3bd50af08974dd62931d0cc78dc7e",
+                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e",
                 "shasum": ""
             },
             "require": {
@@ -3592,7 +3592,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2021-01-19T23:11:00+00:00"
+            "time": "2021-04-20T23:05:40+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -8936,12 +8936,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "57f73fb6939d15049e6667c00d824236d4f2cbf6"
+                "reference": "12e77ee017ee086295fc892635400ec20ebc5a08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/57f73fb6939d15049e6667c00d824236d4f2cbf6",
-                "reference": "57f73fb6939d15049e6667c00d824236d4f2cbf6",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/12e77ee017ee086295fc892635400ec20ebc5a08",
+                "reference": "12e77ee017ee086295fc892635400ec20ebc5a08",
                 "shasum": ""
             },
             "require": {
@@ -8960,7 +8960,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-12-23T15:41:44+00:00"
+            "time": "2021-04-15T19:17:36+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",

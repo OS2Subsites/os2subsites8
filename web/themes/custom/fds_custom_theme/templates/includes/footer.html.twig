@@ -6,12 +6,17 @@
           <section>
             <div class="align-text-left">
               {% if theme_settings.show_footer_logo %}
-                <img src="{{ base_path ~ directory }}/dist/images/footer-light.png">
+                {% if theme_settings.footer.footer_use_default_logo %}
+                   <img src="{{ base_path ~ directory }}/dist/images/footer-light.png">
+                {% else %}
+                   <img src="{{ theme_settings.footer.logo_settings.footer_logo_path | replace({'internal:':''})}}">
+                {% endif %}
                 <br>
                 <br>
               {% endif %}
               <p>
-                {{ 'Rebild Kommunes operationelle beredskab varetages af Nordjyllands Beredskab.' | trans }}
+
+               {{ theme_settings.footer.footer_text }}
               </p>
             </div>
           </section>
