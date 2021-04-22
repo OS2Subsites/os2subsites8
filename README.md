@@ -60,3 +60,11 @@ you suppose to use.
 ```
 drush si --existing-config
 ```
+
+## Commands
+
+* Setup cron command for subsites administration installation
+Inside container run following command. Make sure that `/var/spool/cron/crontabs` folder is added as volume.
+```
+/usr/bin/crontab -l; echo "00 */2 * * * /opt/drupal/vendor/bin/drush cron --root=/opt/drupal") | /usr/bin/crontab -
+```

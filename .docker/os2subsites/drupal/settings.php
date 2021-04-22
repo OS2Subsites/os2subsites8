@@ -814,7 +814,7 @@ $settings['config_sync_directory'] = "../config/default";
 $config['bc_subsites.settings'] = [
   'enabled' => TRUE,
   'domain_suffix' => getenv('DOMAIN_SUFFIX'),
-  'script_dir' => getenv('SCRIPT_DIR'),
+  'script_dir' => getenv('SCRIPTDIR'),
   'subsites_config_dir' => '../config',
   'allowed_install_profiles' => [
     'minimal',

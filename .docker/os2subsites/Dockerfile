@@ -53,6 +53,9 @@ RUN mkdir -p config/default; \
 # Adding custom apache configuration with PHP value and log settings.
 COPY apache/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
+# Additional PHP configuration for both CLI and Apache
+COPY php/os2subsites-php.ini /usr/local/etc/php/conf.d/os2subsites-php.ini
+
 # Adding provisioning data to scripts.
 COPY os2subsites_provision_config /opt/drupal/scripts/os2subsites_provision_config
 
@@ -65,8 +68,20 @@ COPY os2subsite /etc/sudoers.d/os2subsite
 # Adding entry point where required services could be started.
 COPY entrypoint.sh /usr/bin/
 
-# Settings corext permissions.
+# Settings correct permissions.
 RUN chmod +x /usr/bin/entrypoint.sh && chmod 0440 /etc/sudoers.d/os2subsite
+
+# Adding missing HOME env variable.
+# By some circumstances this variable is not availabe on subsite create process.
+RUN echo "HOME=/opt/drupal" >> /opt/drupal/.env
+
+# Addjusting output channels for access and error log.
+RUN ln -sf /dev/stderr /var/log/apache2/error.log; \
+	ln -sf /dev/stdout /var/log/apache2/access.log; \
+	ln -sf /dev/stdout /var/log/apache2/other_vhosts_access.log
+
+# Addjusting php runtime.
+RUN ln -s /usr/local/bin/php /usr/bin/php;
 
 ENTRYPOINT ["entrypoint.sh"]
 
