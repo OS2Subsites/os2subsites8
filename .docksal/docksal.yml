@@ -4,6 +4,12 @@ services:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: mail
+
+  cli:
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+
   # PHPMyAdmin
   pma:
     hostname: pma
