@@ -38,16 +38,18 @@
         "bellcom/os2subsites_provision": "dev-docker",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal/admin_toolbar": "^2.0",
+        "drupal/ckeditor_balloonpanel": "1.x-dev@dev",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8.0",
-        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/core": "9.1.5 as 8.9.0",
+        "drupal/core-composer-scaffold": "^9.0.0",
+        "drupal/core-project-message": "^9.0.0",
+        "drupal/core-recommended": "^9.0.0",
         "drupal/editor_file": "^1.4",
         "drupal/fancy_file_delete": "^2.0",
         "drupal/stage_file_proxy": "^1.0",
-        "drupal/upgrade_status": "^2.11",
+        "drupal/upgrade_status": "^3.4",
         "drush/drush": "^9.7.1 | ^10.0.0",
-        "os2web/os2web": "develop-dev",
+        "os2web/os2web": "dev-drupal9",
         "os2web/os2web_banner": "dev-master",
         "os2web/os2web_hjemmeside": "dev-master",
         "os2web/os2web_news": "dev-master",
@@ -58,7 +60,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.8.0"
+        "drupal/core-dev": "^9.0.0"
     },
     "conflict": {
         "drupal/drupal": "*"

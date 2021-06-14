@@ -2,6 +2,7 @@ name: 'Designsystem.dk - ballerup'
 type: theme
 description: 'Blueish theme for Ballerup.dk.'
 core: 8.x
+core_version_requirement: ^8 || ^9
 screenshot: screenshot.png
 logo: logo.png
 base theme: fds_base_theme
