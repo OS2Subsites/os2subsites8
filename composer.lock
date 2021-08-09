@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7aec559b44137ad85d09578b91f7780c",
+    "content-hash": "4f346b6459e2efae3c868305d0cfc6c1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2082,6 +2082,55 @@
                 }
             ],
             "time": "2020-05-25T17:44:05+00:00"
+        },
+        {
+            "name": "drupal/anonymous_subscriptions",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/anonymous_subscriptions.git",
+                "reference": "7d657a65a660da1e7005e5f78f22d0949718d8d5"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha+5-dev",
+                    "datestamp": "1625218445",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andr1yun",
+                    "homepage": "https://www.drupal.org/user/1277538"
+                },
+                {
+                    "name": "pkil",
+                    "homepage": "https://www.drupal.org/user/2327222"
+                },
+                {
+                    "name": "wiifm",
+                    "homepage": "https://www.drupal.org/user/358731"
+                }
+            ],
+            "description": "Provide Subscription functionality to anonymous users",
+            "homepage": "https://www.drupal.org/project/anonymous_subscriptions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/anonymous_subscriptions"
+            }
         },
         {
             "name": "doctrine/persistence",
@@ -16933,6 +16982,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
+        "drupal/anonymous_subscriptions": 20,
         "os2web/os2web": 20,
         "os2web/os2web_banner": 20,
         "os2web/os2web_hjemmeside": 20,
