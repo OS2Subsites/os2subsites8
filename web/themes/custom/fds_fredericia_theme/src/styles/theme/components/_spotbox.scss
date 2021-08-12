@@ -33,7 +33,7 @@
   &, &:hover, &:focus, &:visited {
     color: $color-text;
     background-color: #fff;
-    outline-color: $color-orange-004;
+    outline-color: $color-red-001;
   }
 
   .field--name-title,
@@ -210,7 +210,7 @@ a.spotbox {
     content: "keyboard_backspace";
     transform: rotate(180deg);
 
-    color: $color-orange-004;
+    color: $color-red-001;
   }
 }
 
@@ -260,7 +260,7 @@ a.spotbox {
     content: "keyboard_backspace";
     transform: rotate(180deg);
 
-    color: $color-orange-004;
+    color: $color-red-001;
   }
 }
 
@@ -388,7 +388,7 @@ a.spotbox {
     content: "keyboard_backspace";
     transform: rotate(180deg);
 
-    color: $color-orange-004;
+    color: $color-red-001;
   }
 }
 
