@@ -37,24 +37,47 @@
 // Variants
 // --------------------------------------------------
 
-.section--municipality-branding {
-  text-align: center;
-
-  background-image: url("../images/watermark.svg");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: right 150px top -100px;
-  background-color: #193c61;
-
-}
-
 .section--latest {
-  background-color: #2a4f75;
+  background-color: $color-primary-medium;
 
-  &,
-  p,
-  h1, h2, h3, h4, h5, h6 {
+  &, p {
     color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: $h3-font-size;
+    color: lighten($color-primary-light, 15%);
+  }
+
+  ul {
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    li {
+
+      &:before {
+        font-family: "FontAwesome";
+        font-size: 1em;
+        top: 0;
+        left: -15px;
+        content: "\f105";
+        color: $color-red-001;
+      }
+    }
+  }
+
+  .block--latest-content {
+
+    .views-field-changed {
+      display: none;
+    }
   }
 }
 
