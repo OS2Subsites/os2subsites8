@@ -54,7 +54,7 @@
 .custom-header-row {}
 .custom-header-row--meta {
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 
   .flexy-row {
     align-items: initial;
@@ -92,7 +92,6 @@
       padding: 18px 15px;
 
       font-size: $h4-font-size;
-      text-transform: uppercase;
 
       color: #fff;
 
