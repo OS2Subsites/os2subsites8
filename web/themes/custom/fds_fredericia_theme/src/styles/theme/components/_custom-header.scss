@@ -84,7 +84,7 @@
   }
 }
 .custom-header-row--desktop-navigation {
-  background-color: $color-data-orange-001;
+  background-color: #A51D38;
 
   .menu {
 
@@ -102,7 +102,7 @@
 
       &:hover, &:focus, &.is-active {
         outline: none;
-        color: $color-data-orange-001;
+        color: #A51D38;
         background-color: #fff;
       }
     }
@@ -111,13 +111,17 @@
 .custom-header-row--mobile-navigation {
   height: 50px;
 
-  background-color: $color-data-orange-001;
+  background-color: #A51D38;
 }
 
-.custom-header__logo {
+.custom-header {
 
-  img {
-    height: 42px;
+  .logo {
+
+    img {
+      display: block;
+      max-height: 60px;
+    }
   }
 }
 
@@ -144,10 +148,13 @@
 // Desktop - and up
 @include media-breakpoint-up(md) {
 
-  .custom-header__logo {
+  .custom-header {
 
-    img {
-      height: auto;
+    .logo {
+
+      img {
+        max-height: 80px;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
-name: 'Designsystem.dk - ballerup'
+name: 'Designsystem.dk - fredericia'
 type: theme
-description: 'Blueish theme for Ballerup.dk.'
+description: 'Theme for Fredericia subsites.'
 core: 8.x
 screenshot: screenshot.png
 logo: logo.png

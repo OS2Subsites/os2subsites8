@@ -39,7 +39,12 @@ footer {
       color: #6dcff6;
     }
 
-    .block {
+    .logo {
+      width: 180px;
+      max-width: 100%;
+    }
+
+    .footer-col {
 
       h2 {
         margin-bottom: 2.5rem;
@@ -84,9 +89,21 @@ footer {
       padding-bottom: .8em;
     }
   }
+  //
+  //.social-icon-list {
+  //  margin-top: 5.5rem;
+  //}
+
+  .logo {
+    margin: auto;
+
+    img {
+      max-height: 61px;
+    }
+  }
 
   .social-icon-list {
-    margin-top: 5.5rem;
+    text-align: right;
   }
 }
 
@@ -125,7 +142,6 @@ footer {
 
 // Desktop - and up
 @include media-breakpoint-up(md) {
-
   .footer-col {
     padding-top: 10px;
     padding-bottom: 15px;

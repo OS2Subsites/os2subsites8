@@ -1,16 +1,28 @@
-<div class="section section--municipality-branding">
-  <a href="{{ url('<front>') }}" class="logo" target="_blank" rel="noopener noreferrer">
-    <img src="{{ base_path ~ directory }}/dist/images/logo--footer.png" alt="Logo" />
-  </a>
+<div class="section section--latest d-print-none">
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="block block--latest-content">
+          <h3>Nyeste indhold</h3>
+        </div>
+      </div>
+      <div class="col col-md-6">
+        <div class="block block--last-visits">
+          <h3>Senest besøgte indhold</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <footer class="d-print-none">
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-4 footer-col">
+        <div class="col-12 col-sm-3 footer-col">
           <div class="block">
-            <h2>Ballerup kommune</h2>
+            <img src="{{ base_path ~ directory }}/dist/images/logo--footer.png" alt="Logo" class="logo logo--footer" />
+
             {% if theme_settings.contact_information.address %}
               <div>
                 {{ theme_settings.contact_information.address }}
@@ -23,6 +35,26 @@
               </div>
             {% endif %}
 
+            <br>
+
+            {% if theme_settings.contact_information.vat_no %}
+              <div>
+                CVR-nr.: {{ theme_settings.contact_information.vat_no }}
+              </div>
+            {% endif %}
+
+            {% if theme_settings.contact_information.giro_no %}
+              <div>
+                Giro-nr.: {{ theme_settings.contact_information.giro_no }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-3 footer-col">
+          <div class="block">
+
+            <p><strong>Kontakt</strong></p>
             {% if theme_settings.contact_information.email %}
               <div>
                 E-mail:
@@ -52,24 +84,7 @@
 
             <br>
 
-            {% if theme_settings.contact_information.vat_no %}
-              <div>
-                CVR-nr.: {{ theme_settings.contact_information.vat_no }}
-              </div>
-            {% endif %}
-
-            {% if theme_settings.contact_information.giro_no %}
-              <div>
-                Giro-nr.: {{ theme_settings.contact_information.giro_no }}
-              </div>
-            {% endif %}
-
-            {% if theme_settings.contact_information.additional_information %}
-              <div>
-                {{ theme_settings.contact_information.additional_information }}
-              </div>
-            {% endif %}
-
+            <p><strong>Åbningstider</strong></p>
             {% if theme_settings.working_hours.working_hours__row_1__day and theme_settings.working_hours.working_hours__row_1__time %}
               <div class="row">
                 <div class="col-4 col-sm-5">
@@ -135,6 +150,12 @@
               </div>
             {% endif %}
 
+            {% if theme_settings.contact_information.additional_information %}
+              <br>
+              <div>
+                {{ theme_settings.contact_information.additional_information }}
+              </div>
+            {% endif %}
           </div>
         </div>
 
@@ -143,10 +164,6 @@
         </div>
 
         <div class="col-12 col-sm-3 footer-col">
-          {{ page.footer_second }}
-        </div>
-
-        <div class="col-12 col-sm-2 footer-col">
           <div class="social-icon-list">
 
             {% if theme_settings.social.facebook.active %}

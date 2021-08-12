@@ -146,7 +146,7 @@ $color-red-001:               #b63433 !default;
 $color-red-002:               #ffe0e0 !default;
 
 //blue
-$color-blue-001:              #006b9a;
+$color-blue-001:              #00335b;
 $color-blue-002:              #004080 !default;
 $color-blue-003:              #000040 !default;
 $color-blue-004:              #e2f2fb !default;
@@ -226,8 +226,8 @@ $color-neutral-darkest:       $color-base-002 !default;
 $color-neutral-lightest:      $color-gray-004 !default; //TODO, need base color for lightest
 
 // Functional theme colors
-$color-primary:               #243544;
-$color-primary-medium:        $color-gray-002 !default;
+$color-primary:               #00335b;
+$color-primary-medium:        #2a4f75;
 $color-primary-dark:          $color-gray-001 !default;
 
 $color-positive:              $color-green-005 !default;
@@ -237,7 +237,7 @@ $color-negative:              $color-red-001 !default;
 $color-primary-darker:        $color-base-002 !default;
 $color-primary-darkest:       $color-base-002 !default;
 $color-primary-lightest:      $color-gray-004 !default;
-$color-background:            $color-gray-006 !default;
+$color-background:            #eeeff4;
 
 // Special text colors
 $color-text-positive:         $color-green-005 !default;

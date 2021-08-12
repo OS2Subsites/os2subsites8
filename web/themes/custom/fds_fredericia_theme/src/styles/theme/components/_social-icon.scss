@@ -84,9 +84,10 @@ a.social-icon-teaser {
 .social-icon-list {
 
   > div {
+    display: inline-block;
 
     + div {
-      margin-top: 1rem;
+      margin-left: 1rem;
     }
   }
 }
