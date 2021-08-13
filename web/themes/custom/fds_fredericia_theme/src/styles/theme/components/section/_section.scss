@@ -38,6 +38,8 @@
 // --------------------------------------------------
 
 .section--latest {
+  padding-top: 5px;
+  padding-bottom: 20px;
   background-color: $color-primary-medium;
 
   &, p {
@@ -77,6 +79,19 @@
 
     .views-field-changed {
       display: none;
+    }
+  }
+
+  .block--last-visits {
+
+    ul {
+
+      li {
+
+        &:before {
+          left: 12px;
+        }
+      }
     }
   }
 }
@@ -163,6 +178,11 @@ body {
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {
+
+  .section--latest {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
 
   .section--alert {
     padding-top: 30px;

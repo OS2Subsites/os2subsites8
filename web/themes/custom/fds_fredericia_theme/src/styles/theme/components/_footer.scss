@@ -47,11 +47,10 @@ footer {
     .footer-col {
 
       h2 {
-        margin-bottom: 2.5rem;
-
-        text-transform: uppercase;
+        margin-bottom: 8px;
         font-weight: $font-weight-bold;
         font-size: $h5-font-size;
+        line-height: 2.2rem;
       }
     }
 
@@ -85,7 +84,7 @@ footer {
 
     .menu-item {
       padding-top: 0;
-      padding-bottom: .8em;
+      padding-bottom: .4em;
     }
   }
   //
@@ -124,20 +123,7 @@ footer {
 @include media-breakpoint-up(xs) {}
 
 // Mobile - only
-@include media-breakpoint-only(xs, $grid-breakpoints) {
-
-  footer {
-
-    .footer {
-
-      .menu {
-        padding-top: 10px;
-
-        border-top: 1px solid rgba(255, 255, 255, .5);
-      }
-    }
-  }
-}
+@include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {}

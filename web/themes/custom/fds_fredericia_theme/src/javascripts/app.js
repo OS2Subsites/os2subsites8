@@ -1,26 +1,3 @@
-jQuery(function ($) {
-  'use strict';
-});
-
-// Language selector.
-// Run through all links and truncate Danish to 2 chars. (ex. Da).
-(function() {
-  var links = document.querySelectorAll('.block-language ul a');
-
-  for (var i = 0; i < links.length; i++) {
-    var link = links[i];
-    var text = 	link.textContent || link.innerText;
-    var truncatedText = text.substring(0, 2);
-
-    // Inject the content back into the DOM.
-    if (link.textContent) {
-      link.textContent = truncatedText;
-    } else {
-      link.innerText = truncatedText;
-    }
-  }
-})();
-
 // Search.
 document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {
@@ -50,63 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })();
 
-// Content reference mobile display.
-// (function() {
-//   var selector = '.paragraph--type--os2web-content-reference .mobile-only .field--name-field-os2web-content-reference';
-//
-//   if (document.querySelector(selector) !== null) {
-//
-//     // Run tiny slider.
-//     tns({
-//       container: selector,
-//       items: 1,
-//       autoplay: true,
-//       autoplayHoverPause: true,
-//       gutter: 32,
-//       rewind: true,
-//     });
-//   }
-// })();
-
-// Max height on sidenav lists.
-(function() {
-  function handleToggle(event) {
-    var button = event.target;
-    var list = button.closest('.sidenav-list');
-    var listItem = button.parentNode;
-
-    listItem.classList.add('limited-height__toggle--hidden');
-
-    list.classList.add('limited-height--overridden');
-  }
-
-  function addToggleToList(list) {
-
-    // Create a button.
-    var textNode = document.createTextNode('Se flere');
-    var buttonNode = document.createElement('BUTTON');
-    buttonNode.appendChild(textNode);
-    buttonNode.addEventListener('click', handleToggle);
-
-    // Create a list item.
-    var listItemNode = document.createElement('LI');
-    listItemNode.classList.add('limited-height__toggle');
-    listItemNode.appendChild(buttonNode);
-
-    // Inject into list.
-    list.appendChild(listItemNode);
-  }
-
-  var sidenavLists = document.querySelectorAll('.sidenav-list');
-
-  for (var i = 0; i < sidenavLists.length; i++) {
-    var list = sidenavLists[i];
-
-    list.classList.add('limited-height');
-    addToggleToList(list);
-  }
-})();
-
 // Custom mobile navigation.
 (function() {
   function handleToggle(event) {
@@ -123,3 +43,63 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', handleToggle);
   }
 })();
+
+// Items for "Senest besøgte indhold".
+(function($, Drupal, drupalSettings) {
+  function addToLocalStorage(path) {
+    var heading = document.querySelectorAll('h1');
+    var currentLocalStorage = JSON.parse(localStorage.getItem('visitedContent')) || [];
+
+    // Filter away current path if its already there.
+    const filteredLocalStorage = currentLocalStorage.filter(function(item) {
+      if (item.path === path) {
+        return false;
+      }
+
+      return true;
+    });
+
+    // Add new path.
+    filteredLocalStorage.push({
+      label: (heading[0] && heading[0].innerText) || 'Ukendt',
+      path: path,
+    });
+
+    // Convert back into a string.
+    var updatedLocalStorageObj = JSON.stringify(filteredLocalStorage);
+
+    return localStorage.setItem('visitedContent', updatedLocalStorageObj);
+  }
+
+  var allowedNodeTypeClassnames = [
+    'page-node-type-os2web-news',
+    'page-node-type-os2web-page',
+  ];
+
+  // Run through allowed classes.
+  for (var i = 0; i < allowedNodeTypeClassnames.length; i += 1) {
+    var allowedClassname = allowedNodeTypeClassnames[i];
+
+    // The current page is supposed to be logged.
+    if (document.body.classList.contains(allowedClassname)) {
+      var currentPath = drupalSettings.path.currentPath;
+
+      addToLocalStorage(currentPath);
+    }
+  }
+
+  var wrapper = document.getElementById('js-visited-content');
+  var items = JSON.parse(localStorage.getItem('visitedContent'));
+  var listNode = document.createElement('UL');
+
+  for (var i = 0; i < items.length; i += 1) {
+    var item = items[i];
+    var listItemNode = document.createElement('LI');
+    listItemNode.innerHTML = '<a href=' + item.path + '>' + item.label + '</a>';
+
+    listNode.prepend(listItemNode);
+  }
+
+  wrapper.innerHTML = '';
+  wrapper.prepend(listNode);
+})(jQuery, Drupal, drupalSettings);
