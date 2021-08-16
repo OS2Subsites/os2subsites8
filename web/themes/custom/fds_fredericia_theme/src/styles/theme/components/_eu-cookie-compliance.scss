@@ -20,6 +20,7 @@
 // Styling
 // --------------------------------------------------
 
+.eu-cookie-withdraw-banner,
 .eu-cookie-compliance-banner {
   position: fixed;
 
@@ -94,6 +95,10 @@
   .field--type-link {
     margin-top: 2rem;
   }
+
+  .eu-cookie-compliance-content {
+    max-width: unset;
+  }
 }
 
 // --------------------------------------------------
@@ -127,10 +132,6 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
-    }
-
-    .field--type-link {
-      margin-left: -1.5rem;
     }
   }
 }

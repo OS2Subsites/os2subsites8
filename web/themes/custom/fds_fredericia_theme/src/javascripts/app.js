@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add new path.
     filteredLocalStorage.push({
-      label: (heading[0] && heading[0].innerText) || 'Ukendt',
+      label: (heading[0] && heading[0].innerText) || document.title,
       path: path,
     });
 
