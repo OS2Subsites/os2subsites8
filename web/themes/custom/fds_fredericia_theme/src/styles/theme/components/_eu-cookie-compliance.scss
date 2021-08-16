@@ -22,14 +22,7 @@
 
 .eu-cookie-withdraw-banner,
 .eu-cookie-compliance-banner {
-  position: fixed;
-
-  left: 0;
-  right: 0;
-  bottom: 0;
-
   padding: 40px 0;
-
   color: #fff;
   background-color: rgba($color-primary, .9);
 
@@ -99,6 +92,19 @@
   .eu-cookie-compliance-content {
     max-width: unset;
   }
+}
+
+.eu-cookie-compliance-banner {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.eu-cookie-withdraw-wrapper {
+  left: 0;
+  right: 0;
 }
 
 // --------------------------------------------------
