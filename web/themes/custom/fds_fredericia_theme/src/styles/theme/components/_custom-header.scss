@@ -70,7 +70,7 @@
       color: $color-text;
 
       &:hover, &:focus {
-        color: $color-primary;
+        color: $color__link__hover;
         text-decoration: underline;
       }
     }
@@ -84,7 +84,7 @@
   }
 }
 .custom-header-row--desktop-navigation {
-  background-color: $color-red-001;
+  background-color: $background_color__navigation;
 
   .menu {
 
@@ -101,7 +101,7 @@
 
       &:hover, &:focus, &.is-active {
         outline: none;
-        color: $color-red-001;
+        color: $background_color__navigation;
         background-color: #fff;
       }
     }
@@ -110,7 +110,7 @@
 .custom-header-row--mobile-navigation {
   height: 50px;
 
-  background-color: $color-red-001;
+  background-color: $background_color__navigation;
 }
 
 .custom-header {

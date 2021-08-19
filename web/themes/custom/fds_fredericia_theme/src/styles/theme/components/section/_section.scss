@@ -40,7 +40,7 @@
 .section--latest {
   padding-top: 5px;
   padding-bottom: 20px;
-  background-color: $color-primary-medium;
+  background-color: $background_color__footer_secondary;
 
   &, p {
     color: #fff;
@@ -48,7 +48,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-size: $h3-font-size;
-    color: lighten($color-primary-light, 15%);
+    color: rgba(255, 255, 255, .5);
   }
 
   ul {
@@ -70,7 +70,7 @@
         top: 0;
         left: -15px;
         content: "\f105";
-        color: $color-red-001;
+        color: $color__bullets;
       }
     }
   }

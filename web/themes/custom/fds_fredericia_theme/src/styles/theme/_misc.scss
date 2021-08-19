@@ -309,15 +309,15 @@ body .page-container {
 }
 
 .background-color--primary {
-  color: #fff !important;
-  background-color: $color-green-001 !important;
+  background-color: $background_color__primary !important;
 }
 .background-color--secondary {
-  background-color: #fff;
+  color: #fff !important;
+  background-color: $background_color__secondary !important;
 }
 .background-color--tertiary {
   color: #fff !important;
-  background-color: $color-primary !important;
+  background-color: $background_color__tertiary !important;
 }
 
 // Remove max-width on all text elements.

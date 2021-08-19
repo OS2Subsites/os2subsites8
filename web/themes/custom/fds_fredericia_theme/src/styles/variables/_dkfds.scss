@@ -214,9 +214,9 @@ $color-text-secondary:        $color-gray-003 !default;
 $color-text-bright:           $color-gray-006 !default;
 
 //Links color
-$color-link:                  $color-blue-001;
-$color-link-hover:            $color-link;
-$color-link-focus:            $color-link;
+$color-link:                  $color__link;
+$color-link-hover:            $color__link__hover;
+$color-link-focus:            $color-link-hover;
 $color-link-visited:          $color-link;
 
 // Default neutral color-scheme (the neutral one that is neither virk.dk nor borger.dk)
@@ -238,7 +238,7 @@ $color-negative:              $color-red-001 !default;
 $color-primary-darker:        $color-base-002 !default;
 $color-primary-darkest:       $color-base-002 !default;
 $color-primary-lightest:      $color-gray-004 !default;
-$color-background:            #eeeff4;
+$color-background:            $background_color__default;
 
 // Special text colors
 $color-text-positive:         $color-green-005 !default;
@@ -293,7 +293,7 @@ $color-data-violet-low-opacity:       $color-data-violet-004 !default;
 
 // Header, footer & navigation colors
 $color-header-background:     $color-gray-006 !default;
-$color-footer-background:     $color-primary;
+$color-footer-background:     $background_color__footer_primary;
 $color-topmenu-background:    $color-gray-002!default;
 $color-subnav-background:     $color-gray-002!default;
 $color-page:                  $color-base-001 !default;
@@ -312,14 +312,14 @@ $color-required:              $color-red-001 !default;
 
 // Button colors
 $button-primary-color: $color-white;
-$button-primary-bg: $color-green-001;
-$button-primary-border-color: $color-primary-medium !default;
-$button-primary-hover-bg: $color-primary-medium !default;
-$button-primary-hover-border-color: $color-primary-dark !default;
-$button-primary-active-bg: $color-primary-dark !default;
-$button-primary-active-border-color: $color-primary-dark !default;
-$button-primary-focus-bg:  $color-primary !default;
-$button-primary-focus-border-color: $color-primary-medium !default;
+$button-primary-bg: $background_color__button;
+$button-primary-border-color: $background_color__button;
+$button-primary-hover-bg: $background_color__button_hover;
+$button-primary-hover-border-color: $background_color__button_hover;
+$button-primary-active-bg: $background_color__button_hover;
+$button-primary-active-border-color: $background_color__button_hover;
+$button-primary-focus-bg:  $background_color__button_hover;
+$button-primary-focus-border-color: $background_color__button_hover;
 $button-disabled-bg: $color-gray-pale !default;
 
 // Tag colors

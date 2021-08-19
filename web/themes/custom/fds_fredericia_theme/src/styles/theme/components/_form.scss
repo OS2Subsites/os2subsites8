@@ -144,7 +144,7 @@ form#views-exposed-form-os2web-search-os2web-search-page {
 
       content: "\f002";
 
-      color: #fff;
+      color: $background_color__navigation;
     }
   }
 
@@ -155,14 +155,14 @@ form#views-exposed-form-os2web-search-os2web-search-page {
 
     max-width: 200px;
 
-    background-color: transparent;
+    background-color: #fff;
 
-    color: #fff;
+    color: $background_color__navigation;
     border: 1px solid #fff;
     border-radius: 4px;
 
     &::placeholder {
-      color: #fff;
+      color: $background_color__navigation;
     }
   }
 
