@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64194f06ecaa9c5811b32750c35be74a",
+    "content-hash": "e0ff7c7db73610bd59dd6ae1197845a9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -9019,6 +9019,38 @@
             "time": "2021-08-04T10:26:51+00:00"
         },
         {
+            "name": "os2web/os2web_events",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_events.git",
+                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
+                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/feeds": "*",
+                "drupal/feeds_tamper": "*"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Provide functionality for events import from Kulturnaut",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_events/issues",
+                "source": "https://github.com/OS2web/os2web_events/tree/master"
+            },
+            "time": "2021-01-06T10:17:21+00:00"
+        },
+        {
             "name": "os2web/os2web_hjemmeside",
             "version": "dev-master",
             "source": {
@@ -17283,6 +17315,7 @@
         "drupal/anonymous_subscriptions": 20,
         "os2web/os2web": 20,
         "os2web/os2web_banner": 20,
+        "os2web/os2web_events": 20,
         "os2web/os2web_hjemmeside": 20,
         "os2web/os2web_news": 20,
         "os2web/os2web_pagebuilder": 20,
@@ -17294,5 +17327,5 @@
         "php": ">=7.0.8"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

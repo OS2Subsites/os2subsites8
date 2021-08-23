@@ -51,6 +51,7 @@
         "os2web/os2web": "develop-dev",
         "os2web/os2web_banner": "dev-master",
         "os2web/os2web_embedded_code": "^0.0.1",
+        "os2web/os2web_events": "dev-master",
         "os2web/os2web_hjemmeside": "dev-master",
         "os2web/os2web_news": "dev-master",
         "os2web/os2web_pagebuilder": "dev-master",
