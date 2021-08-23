@@ -91,8 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var wrapper = document.getElementById('js-visited-content');
   var items = JSON.parse(localStorage.getItem('visitedContent'));
   var listNode = document.createElement('UL');
+  var noOfItemsToDisplay = 6;
 
-  for (var i = 0; i < items.length && i < 10; i += 1) {
+  for (var i = 0; i < items.length && i < noOfItemsToDisplay; i += 1) {
     var item = items[i];
     var listItemNode = document.createElement('LI');
     listItemNode.innerHTML = '<a href=' + item.path + '>' + item.label + '</a>';
