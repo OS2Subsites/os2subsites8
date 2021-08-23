@@ -1,22 +1,24 @@
-<div class="section section--latest d-print-none">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="block block--latest-content">
-          {{ page.footer__latest_content }}
+{% if theme_settings.footer.footer_show_latest_content %}
+  <div class="section section--latest d-print-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="block block--latest-content">
+            {{ page.footer__latest_content }}
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="block block--last-visits">
-          <h3>Senest besøgte indhold</h3>
-          <div id="js-visited-content">
-            Indlæser...
+        <div class="col-12 col-md-6">
+          <div class="block block--last-visits">
+            <h3>Senest besøgte indhold</h3>
+            <div id="js-visited-content">
+              Indlæser...
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+{% endif %}
 
 <footer class="d-print-none">
   <div class="footer">
