@@ -27,7 +27,7 @@
   padding-left: 0 !important; // Reset.
   background-image: none !important;
 
-  box-shadow: $box-shadow;
+  box-shadow: 0 1px 2px 0 rgba(27, 27, 29, .2);
 
   a {
     position: relative;
@@ -43,7 +43,7 @@
     max-width: 100%; // Reset.
 
     border-radius: 3px;
-    background-color: #fff;
+    background-color: $background_color__primary;
     font-weight: bold;
 
     &, &:hover, &:focus, &:visited {
