@@ -8943,12 +8943,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "929cc9f90cd279c96c352c48d0858f3ab1a0fec2"
+                "reference": "86ec8c43285cd060c98f876c9d9c976145b88b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/929cc9f90cd279c96c352c48d0858f3ab1a0fec2",
-                "reference": "929cc9f90cd279c96c352c48d0858f3ab1a0fec2",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/86ec8c43285cd060c98f876c9d9c976145b88b67",
+                "reference": "86ec8c43285cd060c98f876c9d9c976145b88b67",
                 "shasum": ""
             },
             "require": {
@@ -8956,13 +8956,18 @@
                 "drupal/inline_entity_form": "^1.0@RC",
                 "drupal/paragraphs": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-04-24T11:48:05+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_contact/issues",
+                "source": "https://github.com/OS2web/os2web_contact/tree/master"
+            },
+            "time": "2021-08-24T16:34:52+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
