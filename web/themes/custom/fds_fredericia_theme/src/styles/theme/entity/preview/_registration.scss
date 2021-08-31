@@ -89,7 +89,13 @@ a.entity-preview--os2web-registration {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  .entity-preview--os2web-registration {
+    border: 1px solid #333;
+    color: $color-text !important;
+  }
+}
 
 // Touch
 .touchevents {}

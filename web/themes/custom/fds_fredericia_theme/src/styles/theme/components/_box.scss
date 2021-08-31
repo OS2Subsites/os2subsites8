@@ -157,7 +157,20 @@
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  .box {
+    box-shadow: none !important;
+
+    .box__heading {
+      padding: 0;
+    }
+    .box__body {
+      padding: 0;
+    }
+
+  }
+}
 
 // Touch
 .touchevents {}
