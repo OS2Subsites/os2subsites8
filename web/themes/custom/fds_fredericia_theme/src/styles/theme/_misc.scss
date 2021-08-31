@@ -302,6 +302,20 @@ body .page-container {
   }
 }
 
+.path-frontpage {
+
+  .layout--hidden-on-sections {
+    display: none !important;
+  }
+
+  .field--name-field-os2web-simple-text-heading {
+
+    h1,h2,h3,h4,h5,h6 {
+      margin-top: 0;
+    }
+  }
+}
+
 .button--primary {
 
   &, &:hover, &:focus {

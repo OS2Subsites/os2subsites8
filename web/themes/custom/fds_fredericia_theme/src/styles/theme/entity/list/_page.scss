@@ -46,6 +46,10 @@ a.entity-list--os2web-page {
       margin-top: 0;
     }
   }
+
+  .field--name-field-os2web-page-heading {
+    margin-bottom: 15px;
+  }
 }
 
 a.entity-list--os2web-page {
@@ -91,7 +95,15 @@ a.entity-list--os2web-page {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  .entity-list--os2web-page {
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none !important;
+    border-top: 1px solid #333;
+  }
+}
 
 // Touch
 .touchevents {}
