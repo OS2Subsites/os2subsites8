@@ -75,14 +75,14 @@
     <div class="row layout--hidden-on-sections">
       {%
         set content_classes = [
-        page.sidebar_first ? 'col-12 col-md-6',
-        page.sidebar_first is empty ? 'col-12 col-md-9'
+        page.sidebar_first ? 'col-12 col-md-6 content-column',
+        page.sidebar_first is empty ? 'col-12 col-md-9 content-column'
       ]
       %}
 
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-          <aside class="col-12 col-md-3">
+          <aside class="col-12 col-md-3 sidebar-column">
             <div class="layout-sidebar-left">
               {{ page.sidebar_first }}
             </div>
@@ -96,7 +96,7 @@
         </div>
       </main>
 
-      <aside class="col-12 col-md-3">
+      <aside class="col-12 col-md-3 sidebar-column">
         <div class="layout-sidebar-right">
           {{ page.sidebar_second }}
         </div>

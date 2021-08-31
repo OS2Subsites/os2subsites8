@@ -34,6 +34,10 @@ a.entity-list--os2web-news {
   box-shadow: $box-shadow;
   background-color: #fff;
 
+  .background-color--primary & {
+    background-color: $background_color__default;
+  }
+
   .field--name-field-os2web-news-heading {
 
     h1, h2, h3, h4, h5, h6 {

@@ -46,6 +46,10 @@
     background-color: $background_color__primary;
     font-weight: bold;
 
+    .background-color--primary & {
+      background-color: $background_color__default;
+    }
+
     &, &:hover, &:focus, &:visited {
       color: $color-text;
       text-decoration: none;

@@ -109,6 +109,11 @@ function fds_fredericia_theme_preprocess_taxonomy_term(array &$variables) {
 
     $variables['#promoted_node_links'] = $promoted_node_links;
   }
+
+  // Background color
+  if ($term->field_os2web_color && $term->field_os2web_color->value) {
+    $variables['background_color'] = $term->field_os2web_color->value;
+  }
 }
 
 /**

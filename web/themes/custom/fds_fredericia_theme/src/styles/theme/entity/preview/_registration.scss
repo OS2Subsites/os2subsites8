@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Search result
+// | Registration
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .entity-search-result
+// | - .entity-preview--os2web-registration
 // |
 
 // --------------------------------------------------
@@ -14,31 +14,25 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin entity-search-result-mixin() {}
+@mixin entity-preview--os2web-registration-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.entity-search-result {
-  padding: 2.4rem;
-
-  background-color: #fff;
-  box-shadow: $box-shadow;
-
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-  }
-
-  .background-color--primary & {
-    background-color: $background_color__default;
-  }
+a.entity-preview--os2web-registration {
+  max-width: unset;
+}
+.entity-preview--os2web-registration {
+  margin-bottom: 8px;
+  padding: 8px ($grid-gutter-width / 2);
+  max-width: 450px;
+  color: #fff;
 }
 
-a.entity-search-result {
-  max-width: unset;
+a.entity-preview--os2web-registration {
 
-  &, &:visited, &:focus {
+  &, &:hover, &:focus, &:active {
     color: $color-text;
   }
 }
@@ -46,6 +40,22 @@ a.entity-search-result {
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.entity-preview--os2web-registration {
+
+  &,
+  &.taxonomy-term-background-color--primary {
+    background-color: #A51D38;
+  }
+
+  &.taxonomy-term-background-color--secondary {
+    background-color: #196620;
+  }
+
+  &.taxonomy-term-background-color--tertiary {
+    background-color: #183D60;
+  }
+}
 
 // --------------------------------------------------
 // Responsive

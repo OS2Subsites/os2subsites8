@@ -29,6 +29,10 @@
   box-shadow: 0 1px 2px 0 rgba(27, 27, 29, .2);
   background-color: $background_color__primary;
 
+  .background-color--primary & {
+    background-color: $background_color__default;
+  }
+
   .field--name-field-os2web-event-heading {
 
     h1, h2, h3, h4, h5, h6 {
