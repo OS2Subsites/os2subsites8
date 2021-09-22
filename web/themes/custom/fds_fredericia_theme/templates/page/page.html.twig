@@ -93,6 +93,12 @@
       <main {{ content_attributes.addClass(content_classes) }}>
         <div class="layout-content">
           {{ page.content }}
+          <div style="padding-bottom: 2rem;">
+            <h2>
+            <a href="#" class="action-button" onclick="window.print();" style="text-decoration: none; display: inline-block;">
+              <span class="icon fa fa-print" style="height: 4rem; width: 4rem; font-size: 4rem; vertical-align: middle;"></span>{{ 'Udskriv information' | trans }}
+            </a></h2>
+          </div>
         </div>
       </main>
 
