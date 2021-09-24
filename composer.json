@@ -43,6 +43,7 @@
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/editor_file": "^1.4",
+        "drupal/entity_clone": "^1.0@beta",
         "drupal/fancy_file_delete": "^2.0",
         "drupal/stage_file_proxy": "^1.0",
         "drupal/upgrade_status": "^2.11",
