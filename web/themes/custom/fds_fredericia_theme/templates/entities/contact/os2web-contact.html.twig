@@ -1,18 +1,22 @@
 {% set modalId = 'modal-' ~ random() %}
 
 <div{{ attributes.addClass('os2web_contact') }}>
+  <div class="box__heading">
   {{ content.field_os2web_contact_heading }}
-  {{ content.field_os2web_contact_body }}
-  {{ content.field_os2web_contact_phone }}
-  {{ content.field_os2web_contact_email }}
+  </div>
+  <div class="box__body">
+    {{ content.field_os2web_contact_body }}
+    {{ content.field_os2web_contact_phone }}
+    {{ content.field_os2web_contact_email }}
 
-  {{ content.field_os2web_contact_more }}
+    {{ content.field_os2web_contact_more }}
 
-  {% if contact.field_os2web_contact_modal.value and  contact.field_os2web_contact_modal_butt.value%}
-    <button data-micromodal-trigger="{{ modalId }}" class="button button-primary">
-      {{ content.field_os2web_contact_modal_butt }}
-    </button>
-  {% endif %}
+    {% if contact.field_os2web_contact_modal.value and  contact.field_os2web_contact_modal_butt.value%}
+      <button data-micromodal-trigger="{{ modalId }}" class="button button-primary">
+        {{ content.field_os2web_contact_modal_butt }}
+      </button>
+    {% endif %}
+  </div>
 </div>
 
 {% if contact.field_os2web_contact_modal.value %}

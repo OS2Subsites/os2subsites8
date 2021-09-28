@@ -195,7 +195,6 @@ body .page-container {
   }
 }
 
-.block-os2web-contact,
 .block-os2web-pagebuilder-related-links {
 
   .box__heading {
@@ -203,6 +202,19 @@ body .page-container {
     padding-bottom: 0;
 
     background-color: transparent;
+  }
+}
+
+
+.block-os2web-contact {
+  .box__heading {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .region-sidebar-second & {
+    padding-top: 0;
   }
 }
 
