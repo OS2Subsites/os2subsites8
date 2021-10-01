@@ -1,0 +1,64 @@
+<header class="d-print-none">
+  <div class="custom-header">
+    <div class="custom-header-row custom-header-row--meta">
+      <div class="container-fluid">
+        <div class="flexy-row">
+          <a href="{{ url('<front>') }}" class="logo" target="_blank" rel="noopener noreferrer">
+            <img src="{{ base_path ~ directory }}/dist/images/logo.svg" alt="Logo" />
+          </a>
+
+          <div class="flexy-spacer"></div>
+
+          {{ page.header__main_navigation }}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+{{ page.featured_top }}
+
+<div class="page-container" id="font-resize-wrapper">
+  <div class="container">
+    {{ page.highlighted }}
+
+    <div class="row layout--hidden-on-sections">
+      {%
+        set content_classes = [
+        page.sidebar_first ? 'col-12 col-md-6',
+        page.sidebar_first is empty ? 'col-12 col-md-9'
+      ]
+      %}
+
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <aside class="col-12 col-md-3">
+            <div class="layout-sidebar-left">
+              {{ page.sidebar_first }}
+            </div>
+          </aside>
+        {% endblock %}
+      {% endif %}
+
+      <main {{ content_attributes.addClass(content_classes) }}>
+        <div class="layout-content">
+          {{ page.content }}
+        </div>
+      </main>
+
+      <aside class="col-12 col-md-3 d-print-none">
+        <div class="layout-sidebar-right">
+          {% if page.sidebar_second %}
+            {% block sidebar_second %}
+              {{ page.sidebar_second }}
+            {% endblock %}
+          {% endif %}
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  {{ page.featured_bottom_first }}
+</div>
+
+{% include '@fds_bellcom_theme/includes/footer.html.twig' %}
