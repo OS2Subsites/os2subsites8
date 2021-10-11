@@ -1,0 +1,22 @@
+name: 'Designsystem.dk - bellcom.dk'
+type: theme
+description: 'Bellcom.dk.'
+core: 8.x
+screenshot: screenshot.png
+logo: logo.png
+base theme: fds_base_theme
+package: OS2web
+
+regions:
+  header__main_navigation: 'Header - main navigation'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+
+libraries:
+  - 'fds_bellcom_theme/fonts'
+  - 'fds_bellcom_theme/styles'
+  - 'fds_bellcom_theme/javascripts'
