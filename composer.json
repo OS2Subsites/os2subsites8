@@ -81,6 +81,9 @@
         "files": ["load.environment.php"]
     },
     "scripts": {
+        "os2subsites_provision": [
+            "ln -sf ../../../scripts/os2subsites_provision/8.x/bc_subsites web/modules/contrib/bc_subsites"
+        ],
         "pre-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
@@ -89,10 +92,12 @@
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "@os2subsites_provision",
             "./scripts/os2subsites_provision/check_config.sh scripts/os2subsites_provision_config"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "@os2subsites_provision",
             "./scripts/os2subsites_provision/check_config.sh scripts/os2subsites_provision_config"
         ]
     },
