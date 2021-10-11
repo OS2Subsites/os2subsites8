@@ -1,4 +1,4 @@
-FROM drupal:8-apache-buster
+FROM drupal:9-php7.4-apache-buster
 
 # Installing additional dependencies.
 RUN set -eux; \
@@ -27,16 +27,15 @@ RUN set -eux; \
 #	mv os2subsites8-$OS2SUBSITES8_TAG drupal
 #	DEVELOPMENT SETTINGS
 #	Loading OS2Subsites from branch to avoid development releases.
-	wget https://github.com/OS2Subsites/os2subsites8/archive/docker.zip; \
-	unzip docker.zip; \
-	rm docker.zip; \
-	mv os2subsites8-docker drupal
+	wget https://github.com/OS2Subsites/os2subsites8/archive/develop-d9.zip; \
+	unzip develop-d9.zip; \
+	rm develop-d9.zip; \
+	mv os2subsites8-develop-d9 drupal
 WORKDIR /opt/drupal
 
 # Loading composer dependencies and configuring project folders.
 RUN set -eux; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
-	composer global require hirak/prestissimo;\
 	COMPOSER_MEMORY_LIMIT=-1 composer install; \
 	chown -R www-data:www-data web/sites web/modules web/themes; \
 	chmod +x scripts/os2subsites_provision/*.sh; \
