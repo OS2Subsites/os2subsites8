@@ -16,7 +16,8 @@ services:
   # Could be run with many replica on demand.
   php:
     # Both php and CLI containers should use the same container.
-    image: os2subsites/os2subsites8:0.0.3
+    # image: os2subsites/os2subsites8:0.1.2
+    build: .docker/os2subsites
     volumes:
       - ./.docker/logs:/var/log:delegated
       #- ./:/opt/drupal:delegated
@@ -30,8 +31,7 @@ services:
       - backend
       - frontend
     env_file:
-      - .env
-
+      - .env_docker_compose
 
   db:
     image: mysql:5.7
@@ -39,6 +39,6 @@ services:
       - ./.docker/mariadb/data:/var/lib/mysql:delegated
       #- ./.docker/mariadb/my.cnf:/etc/mysql/conf.d/10-default.cnf:ro,delegated
     env_file:
-      - .env
+      - .env_docker_compose
     networks:
       - backend
