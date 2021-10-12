@@ -26,8 +26,11 @@
       <div class="row">
         <div class="col-12 col-sm-3 footer-col">
           <div class="block">
-            <img src="{{ base_path ~ directory }}/dist/images/logo--footer.png" alt="Logo" class="logo logo--footer" />
-
+            {% if theme_settings.footer.footer_use_default_logo %}
+              <img src="{{ base_path ~ directory }}/dist/images/logo--footer.png" alt="Logo" class="logo logo--footer" />
+            {% else %}
+              <img src="{{ theme_settings.footer.logo_settings.footer_logo_path | replace({'internal:':''})}}">
+            {% endif %}
             {% if theme_settings.contact_information.address %}
               <div>
                 {{ theme_settings.contact_information.address }}
@@ -45,6 +48,12 @@
             {% if theme_settings.contact_information.vat_no %}
               <div>
                 CVR-nr.: {{ theme_settings.contact_information.vat_no }}
+              </div>
+            {% endif %}
+
+            {% if theme_settings.contact_information.ean_no %}
+              <div>
+                EAN-nr.: {{ theme_settings.contact_information.ean_no }}
               </div>
             {% endif %}
 
@@ -85,74 +94,75 @@
                   {{ theme_settings.contact_information.fax_readable }}
                 </a>
               </div>
+              <br>
             {% endif %}
 
-            <br>
-
-            <p class="h4">Åbningstider</p>
-            {% if theme_settings.working_hours.working_hours__row_1__day and theme_settings.working_hours.working_hours__row_1__time %}
-              <div class="row">
-                <div class="col-4 col-sm-5">
-                  {{ theme_settings.working_hours.working_hours__row_1__day }}
-                </div>
-                <div class="col-4 col-sm-7">
-                  <div class="align-text-right">
-                    {{ theme_settings.working_hours.working_hours__row_1__time }}
+            {% if (theme_settings.working_hours | filter(v => v != '')) is not empty %}
+              <p class="h4">Åbningstider</p>
+              {% if theme_settings.working_hours.working_hours__row_1__day and theme_settings.working_hours.working_hours__row_1__time %}
+                <div class="row">
+                  <div class="col-4 col-sm-5">
+                    {{ theme_settings.working_hours.working_hours__row_1__day }}
+                  </div>
+                  <div class="col-4 col-sm-7">
+                    <div class="align-text-right">
+                      {{ theme_settings.working_hours.working_hours__row_1__time }}
+                    </div>
                   </div>
                 </div>
-              </div>
-            {% endif %}
+              {% endif %}
 
-            {% if theme_settings.working_hours.working_hours__row_2__day and theme_settings.working_hours.working_hours__row_2__time %}
-              <div class="row">
-                <div class="col-4 col-sm-5">
-                  {{ theme_settings.working_hours.working_hours__row_2__day }}
-                </div>
-                <div class="col-4 col-sm-7">
-                  <div class="align-text-right">
-                    {{ theme_settings.working_hours.working_hours__row_2__time }}
+              {% if theme_settings.working_hours.working_hours__row_2__day and theme_settings.working_hours.working_hours__row_2__time %}
+                <div class="row">
+                  <div class="col-4 col-sm-5">
+                    {{ theme_settings.working_hours.working_hours__row_2__day }}
+                  </div>
+                  <div class="col-4 col-sm-7">
+                    <div class="align-text-right">
+                      {{ theme_settings.working_hours.working_hours__row_2__time }}
+                    </div>
                   </div>
                 </div>
-              </div>
-            {% endif %}
+              {% endif %}
 
-            {% if theme_settings.working_hours.working_hours__row_3__day and theme_settings.working_hours.working_hours__row_3__time %}
-              <div class="row">
-                <div class="col-4 col-sm-5">
-                  {{ theme_settings.working_hours.working_hours__row_3__day }}
-                </div>
-                <div class="col-4 col-sm-7">
-                  <div class="align-text-right">
-                    {{ theme_settings.working_hours.working_hours__row_3__time }}
+              {% if theme_settings.working_hours.working_hours__row_3__day and theme_settings.working_hours.working_hours__row_3__time %}
+                <div class="row">
+                  <div class="col-4 col-sm-5">
+                    {{ theme_settings.working_hours.working_hours__row_3__day }}
+                  </div>
+                  <div class="col-4 col-sm-7">
+                    <div class="align-text-right">
+                      {{ theme_settings.working_hours.working_hours__row_3__time }}
+                    </div>
                   </div>
                 </div>
-              </div>
-            {% endif %}
+              {% endif %}
 
-            {% if theme_settings.working_hours.working_hours__row_4__day and theme_settings.working_hours.working_hours__row_4__time %}
-              <div class="row">
-                <div class="col-4 col-sm-5">
-                  {{ theme_settings.working_hours.working_hours__row_4__day }}
-                </div>
-                <div class="col-4 col-sm-7">
-                  <div class="align-text-right">
-                    {{ theme_settings.working_hours.working_hours__row_4__time }}
+              {% if theme_settings.working_hours.working_hours__row_4__day and theme_settings.working_hours.working_hours__row_4__time %}
+                <div class="row">
+                  <div class="col-4 col-sm-5">
+                    {{ theme_settings.working_hours.working_hours__row_4__day }}
+                  </div>
+                  <div class="col-4 col-sm-7">
+                    <div class="align-text-right">
+                      {{ theme_settings.working_hours.working_hours__row_4__time }}
+                    </div>
                   </div>
                 </div>
-              </div>
-            {% endif %}
+              {% endif %}
 
-            {% if theme_settings.working_hours.working_hours__row_5__day and theme_settings.working_hours.working_hours__row_5__time %}
-              <div class="row">
-                <div class="col-4 col-sm-5">
-                  {{ theme_settings.working_hours.working_hours__row_5__day }}
-                </div>
-                <div class="col-4 col-sm-7">
-                  <div class="align-text-right">
-                    {{ theme_settings.working_hours.working_hours__row_5__time }}
+              {% if theme_settings.working_hours.working_hours__row_5__day and theme_settings.working_hours.working_hours__row_5__time %}
+                <div class="row">
+                  <div class="col-4 col-sm-5">
+                    {{ theme_settings.working_hours.working_hours__row_5__day }}
+                  </div>
+                  <div class="col-4 col-sm-7">
+                    <div class="align-text-right">
+                      {{ theme_settings.working_hours.working_hours__row_5__time }}
+                    </div>
                   </div>
                 </div>
-              </div>
+              {% endif %}
             {% endif %}
 
             {% if theme_settings.contact_information.additional_information %}
