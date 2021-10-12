@@ -94,10 +94,10 @@
                   {{ theme_settings.contact_information.fax_readable }}
                 </a>
               </div>
-              <br>
             {% endif %}
 
             {% if (theme_settings.working_hours | filter(v => v != '')) is not empty %}
+              <br>
               <p class="h4">Åbningstider</p>
               {% if theme_settings.working_hours.working_hours__row_1__day and theme_settings.working_hours.working_hours__row_1__time %}
                 <div class="row">
