@@ -27,9 +27,9 @@
         <div class="col-12 col-sm-3 footer-col">
           <div class="block">
             {% if theme_settings.footer.footer_use_default_logo %}
-              <img src="{{ base_path ~ directory }}/dist/images/logo--footer.png" alt="Logo" class="logo logo--footer" />
+              <img src="{{ base_path ~ directory }}/dist/images/logo--footer.png" alt="" class="logo logo--footer" />
             {% else %}
-              <img src="{{ theme_settings.footer.logo_settings.footer_logo_path | replace({'internal:':''})}}">
+              <img src="{{ theme_settings.footer.logo_settings.footer_logo_path | replace({'internal:':''})}}" alt="" class="logo logo--footer">
             {% endif %}
             {% if theme_settings.contact_information.address %}
               <div>
