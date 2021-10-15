@@ -74,8 +74,7 @@
     <div class="row layout--hidden-on-sections">
       {%
         set content_classes = [
-        page.sidebar_first ? 'col-12 col-md-6 content-column',
-        page.sidebar_first is empty ? 'col-12 col-md-9 content-column'
+        'col-12 content-column'
       ]
       %}
 
@@ -94,12 +93,6 @@
           {{ page.content }}
         </div>
       </main>
-
-      <aside class="col-12 col-md-3 sidebar-column">
-        <div class="layout-sidebar-right">
-          {{ page.sidebar_second }}
-        </div>
-      </aside>
     </div>
   </div>
 
