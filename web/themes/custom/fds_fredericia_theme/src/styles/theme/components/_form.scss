@@ -94,7 +94,7 @@ body {
 
 // Search form.
 form#search-block-form,
-form#views-exposed-form-search-indholdside-page-1,
+.region-small-search form#views-exposed-form-search-indholdside-page-1,
 form#views-exposed-form-os2web-search-os2web-search-page {
   position: relative;
 
@@ -179,6 +179,22 @@ form#views-exposed-form-os2web-search-os2web-search-page {
 
   input.form-autocomplete {
     background-image: none;
+  }
+}
+
+.region-content {
+  form#views-exposed-form-search-indholdside-page-1 {
+    margin-bottom: 1rem;
+
+    > .form--inline {
+      > div {
+        display: inline;
+
+        input {
+          margin-top: 0;
+        }
+      }
+    }
   }
 }
 
