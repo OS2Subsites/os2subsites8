@@ -55,6 +55,7 @@
         "os2web/os2web_hjemmeside": "dev-master",
         "os2web/os2web_news": "dev-master",
         "os2web/os2web_pagebuilder": "dev-master",
+        "os2web/os2web_search": "dev-master",
         "os2web/os2web_spotbox": "dev-master",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
