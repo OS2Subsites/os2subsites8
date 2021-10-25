@@ -69,6 +69,11 @@
           <div class="block">
 
             <p class="h4">Kontakt</p>
+            {% if theme_settings.contact_information.business_owner_name %}
+              <div>
+                {{ theme_settings.contact_information.business_owner_name }}
+              </div>
+            {% endif %}
             {% if theme_settings.contact_information.email %}
               <div>
                 E-mail:
