@@ -50,6 +50,15 @@ a.entity-list--os2web-page {
   .field--name-field-os2web-page-heading {
     margin-bottom: 15px;
   }
+
+  .field--name-field-os2web-page-registrations,
+  .field--name-field-os2web-page-keyword {
+    margin-bottom: 0;
+  }
+
+  .field--name-field-os2web-page-registrations .field__item:last-child .entity-preview--os2web-registration {
+    margin-bottom: 0;
+  }
 }
 
 a.entity-list--os2web-page {
