@@ -9,7 +9,7 @@
 
     var link = this;
     var image = link.querySelector('img');
-    var text = image.getAttribute('alt');
+    var text = image.getAttribute('title');
     var pathToImage = link.getAttribute('href');
     var wrapper = link.closest('.field--name-field-os2web-slideshow-image');
     var modalNodeElement = wrapper.querySelector('.modal');
