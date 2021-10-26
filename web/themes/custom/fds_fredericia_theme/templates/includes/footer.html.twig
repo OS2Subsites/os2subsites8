@@ -67,8 +67,12 @@
 
         <div class="col-12 col-sm-3 footer-col">
           <div class="block">
+            {% if theme_settings.contact_information.business_owner_name
+              or theme_settings.contact_information.email
+              or theme_settings.contact_information.phone_readable %}
+              <p class="h4">Kontakt</p>
+            {% endif %}
 
-            <p class="h4">Kontakt</p>
             {% if theme_settings.contact_information.business_owner_name %}
               <div>
                 {{ theme_settings.contact_information.business_owner_name }}
