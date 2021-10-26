@@ -21,7 +21,32 @@
 // --------------------------------------------------
 
 .paragraph--type--os2web-section-paragraph {
+  .field--name-field-os2web-section-par-image {
+    display: inline-block;
+    width: 50px;
+    vertical-align: bottom;
+  }
 
+  .field--name-field-os2web-section-par-heading {
+    display: inline-block;
+  }
+
+  .box.box--section-link {
+    margin-right: 10px;
+
+    .box__body {
+      padding: 5px 15px;
+      min-height: auto;
+    }
+
+    a {
+      padding-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
 }
 
 // --------------------------------------------------
