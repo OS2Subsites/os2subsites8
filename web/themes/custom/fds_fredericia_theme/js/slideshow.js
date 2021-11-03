@@ -84,5 +84,6 @@
 
     // bind function to event
     slider.events.on('transitionEnd', transitionEndCallback);
+    transitionEndCallback(slider.getInfo());
   }
 })();
