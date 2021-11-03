@@ -136,3 +136,24 @@ function fds_fredericia_theme_preprocess_node(array &$variables) {
     }
   }
 }
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function fds_fredericia_theme_preprocess_block(array &$variables) {
+  // Making block id attribute unique by adding block region information.
+  if (isset($variables['content']['#menu_name'])) {
+    // Pass region name to the suggestions_menu_alter for
+    // the region suggestion.
+    if (!empty($variables['elements']['#id'])) {
+      /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $block_storage */
+      $block_storage = \Drupal::entityTypeManager()
+        ->getStorage('block');
+      /** @var \Drupal\block\BlockInterface $block */
+      $block = $block_storage->load($variables['elements']['#id']);
+      if (!empty($block)) {
+        $variables['attributes']['id'] .= '-' . str_replace('_', '-', $block->getRegion());
+      }
+    }
+  }
+}
