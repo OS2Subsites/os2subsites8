@@ -52,10 +52,23 @@
 (function() {
   var selector = '.field--name-field-os2web-slideshow-image .field__items';
 
+  var transitionEndCallback = function (info, eventName) {
+    // Add tab
+    for (var i = 0; i < info.slideItems.length; i++) {
+      var slide = info.slideItems[i];
+      if (slide.classList.contains('tns-slide-active')) {
+        slide.querySelector('a').removeAttribute('tabindex');
+      }
+      else {
+        slide.querySelector('a').setAttribute('tabindex', '-1');
+      }
+    }
+  }
+
   if (document.querySelector(selector) !== null) {
 
     // Run tiny slider.
-    tns({
+    var slider = tns({
       container: selector,
       items: 1,
       autoplay: false,
@@ -68,5 +81,8 @@
         },
       },
     });
+
+    // bind function to event
+    slider.events.on('transitionEnd', transitionEndCallback);
   }
 })();
