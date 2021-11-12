@@ -170,6 +170,7 @@ body .page-container {
     padding-bottom: $grid-gutter-width;
 
     &:first-child {
+      padding-top: 0;
     }
 
     &:last-child {
@@ -353,10 +354,19 @@ body .page-container {
 .background-color--secondary {
   color: #fff !important;
   background-color: $background_color__secondary !important;
+
+  a {
+    color: #fff !important;
+  }
 }
+
 .background-color--tertiary {
   color: #fff !important;
   background-color: $background_color__tertiary !important;
+
+  a {
+    color: #fff !important;
+  }
 }
 
 // Remove max-width on all text elements.
