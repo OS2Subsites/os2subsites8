@@ -169,8 +169,10 @@ body .page-container {
     padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
 
-    &:first-child {
-      padding-top: 0;
+    &:not(.block-os2web-pagebuilder-related-links) {
+      &:first-child {
+        padding-top: 0;
+      }
     }
 
     &:last-child {
