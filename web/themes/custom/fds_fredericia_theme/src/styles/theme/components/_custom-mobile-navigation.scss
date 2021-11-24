@@ -148,8 +148,29 @@ $distance-from-top: 78px;
         order: 1;
       }
 
+      &.menu-item--expanded {
+        > a {
+          &:before {
+            position: absolute;
+            left: 200px;
+            display: inline-block;
+            font-family: FontAwesome;
+            content: "\f078";
+            color: $color-red-001;
+          }
+        }
+      }
+
       .custom-mobile-navigation--open & {
         display: block;
+      }
+
+      .menu li {
+        a {
+          &, &.is-active, &:hover, &:focus {
+            color: $color-red-001;
+          }
+        }
       }
     }
 

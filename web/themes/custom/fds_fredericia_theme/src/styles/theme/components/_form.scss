@@ -17,7 +17,55 @@ $custom-input-left-right-padding: 20px;
 // Mixins
 // --------------------------------------------------
 
-@mixin form-mixin() {}
+@mixin search-form-mobile-mixin() {
+  .custom-mobile-navigation {
+    .region-small-search {
+      display: none;
+
+      form#views-exposed-form-search-indholdside-page-1 {
+        padding: 14px 90px 14px 15px;
+
+        .form--inline .form-item {
+          float: right;
+
+          .form-input {
+            padding: 0;
+            text-align: right;
+            outline: none;
+          }
+        }
+
+        .form-actions {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 80px;
+          height: 100%;
+          margin: auto;
+
+          &:after {
+            display: block;
+            top: 0;
+            right: 0;
+            z-index: 100;
+            bottom: 0;
+            margin: auto;
+            height: 28px;
+            left: 0;
+            width: 50px;
+          }
+        }
+      }
+    }
+
+    &--open {
+      .region-small-search {
+        display: block;
+      }
+
+    }
+  }
+}
 
 // --------------------------------------------------
 // Styling
@@ -290,13 +338,17 @@ form#views-exposed-form-os2web-meetings-search-page-os2web-meeetings-search-page
 @include media-breakpoint-up(xs) {}
 
 // Mobile - only
-@include media-breakpoint-only(xs, $grid-breakpoints) {}
+@include media-breakpoint-only(xs, $grid-breakpoints) {
+  @include search-form-mobile-mixin;
+}
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {}
 
 // Tablet - only
-@include media-breakpoint-only(sm, $grid-breakpoints) {}
+@include media-breakpoint-only(sm, $grid-breakpoints) {
+  @include search-form-mobile-mixin;
+}
 
 // Desktop - and up
 @include media-breakpoint-up(md) {}
