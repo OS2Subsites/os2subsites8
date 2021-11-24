@@ -22,7 +22,8 @@ $custom-input-left-right-padding: 20px;
     .region-small-search {
       display: none;
 
-      form#views-exposed-form-search-indholdside-page-1 {
+      form#views-exposed-form-search-indholdside-page-1,
+      form#views-exposed-form-os2web-search-page-1 {
         padding: 14px 90px 14px 15px;
 
         .form--inline .form-item {
