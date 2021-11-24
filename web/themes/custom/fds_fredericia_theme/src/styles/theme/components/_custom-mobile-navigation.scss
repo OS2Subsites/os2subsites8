@@ -39,7 +39,7 @@ $distance-from-top: 78px;
 
   font-size: 2.4rem;
 
-  color: $color-red-001;
+  color: $background_color__navigation;
   background-color: #e6e6e6;
 
   .toolbar-vertical & {
@@ -155,7 +155,7 @@ $distance-from-top: 78px;
             display: inline-block;
             font-family: FontAwesome;
             content: "\f078";
-            color: $color-red-001;
+            color: $background_color__navigation;
           }
         }
       }
@@ -167,7 +167,7 @@ $distance-from-top: 78px;
       .menu li {
         a {
           &, &.is-active, &:hover, &:focus {
-            color: $color-red-001;
+            color: $background_color__navigation;
           }
         }
       }
@@ -182,7 +182,7 @@ $distance-from-top: 78px;
       border-bottom: 1px solid #dadde0;
 
       &, &.is-active, &:hover, &:focus {
-        color: $color-red-001;
+        color: $background_color__navigation;
       }
 
       .custom-mobile-navigation--open & {
