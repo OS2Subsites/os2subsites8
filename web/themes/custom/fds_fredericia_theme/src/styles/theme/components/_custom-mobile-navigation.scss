@@ -150,8 +150,8 @@ $distance-from-top: 78px;
 
       &.menu-item--expanded {
         > a {
-          &:before {
-            padding-right: 10px;
+          &:after {
+            padding-left: 10px;
             display: inline-block;
             font-family: FontAwesome;
             content: "\f078";
