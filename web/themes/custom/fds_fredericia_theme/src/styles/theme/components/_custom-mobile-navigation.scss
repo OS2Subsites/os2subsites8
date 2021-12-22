@@ -149,13 +149,23 @@ $distance-from-top: 78px;
       }
 
       &.menu-item--expanded {
-        > a {
+        > a .main-menu-expanded-icon {
+            z-index: 999;
           &:after {
             padding-left: 10px;
             display: inline-block;
             font-family: FontAwesome;
             content: "\f078";
             color: $background_color__navigation;
+          }
+          &.expanded:after{
+            content: '\f077';
+          }
+        }
+        .menu.open {
+          display: block;
+          li {
+            display: block;
           }
         }
       }

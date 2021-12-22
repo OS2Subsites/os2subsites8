@@ -51,10 +51,7 @@
     }
   }
 
-  // Dropdown menu.
-  .menu li:hover > .menu {
-    display: block;
-  }
+
   .menu .menu {
     position: absolute;
     top: 100%;
@@ -201,6 +198,10 @@
       img {
         max-height: 80px;
       }
+    }
+    // Dropdown menu.
+    .menu li:hover > .menu {
+      display: block;
     }
   }
 }

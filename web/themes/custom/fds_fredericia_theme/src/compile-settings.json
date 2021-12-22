@@ -2,6 +2,7 @@
   "javascripts": [
     "node_modules/dkfds/dist/js/dkfds.js",
     "src/javascripts/font-resizer.js",
+    "src/javascripts/mobile-menu.js",
     "src/javascripts/app.js"
   ],
   "styles": [
