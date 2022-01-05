@@ -26,6 +26,12 @@
     color: inherit;
   }
 
+  &.background-color--primary {
+    .box__heading {
+      background-color: #e5e5e5;
+    }
+  }
+
   &.background-color--transparent {
 
     &.box {
