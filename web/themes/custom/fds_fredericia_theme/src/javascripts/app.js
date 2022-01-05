@@ -1,3 +1,14 @@
+(function($) {
+  "use strict";
+  $(document).ready(function ($) {
+    $('.main-menu-expanded-icon').on('click', function (evt) {
+      evt.preventDefault();
+      $(this).toggleClass('expanded');
+      $(this).parent().parent().children('.menu').toggleClass('open');
+    });
+  });
+})(jQuery);
+
 // Search.
 document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {

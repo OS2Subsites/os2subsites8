@@ -10,7 +10,7 @@
 // Variables
 // --------------------------------------------------
 
-$distance-from-top: 78px;
+$distance-from-top: 0;
 
 // --------------------------------------------------
 // Mixins
@@ -28,7 +28,7 @@ $distance-from-top: 78px;
   position: absolute;
 
   top: $distance-from-top;
-  right: 10px;
+  left: 0;
 
   height: 50px;
   width: 50px;
@@ -120,9 +120,6 @@ $distance-from-top: 78px;
   }
 }
 .custom-mobile-navigation-popup__navigation--vertical {
-  margin-left: 80px;
-  margin-right: 10px;
-
   background-color: #fff;
 
   .custom-mobile-navigation--open & {
@@ -174,17 +171,33 @@ $distance-from-top: 78px;
         display: block;
       }
 
-      .menu li {
-        a {
-          &, &.is-active, &:hover, &:focus {
-            color: $background_color__navigation;
+      ul.menu {
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 0;
+        z-index: 501;
+
+        li {
+          a {
+            padding: 14px 20px 14px 20px;
+            font-size: inherit;
+
+            &, &.is-active, &:hover, &:focus {
+              color: $background_color__navigation;
+            }
           }
+        }
+      }
+
+      &.menu-item--expanded {
+        a {
+          padding-right: 15px;
         }
       }
     }
 
     a {
-      padding: 14px 80px 14px 15px;
+      padding: 14px 45px 14px 15px;
 
       text-decoration: none;
       text-transform: uppercase;
@@ -193,10 +206,6 @@ $distance-from-top: 78px;
 
       &, &.is-active, &:hover, &:focus {
         color: $background_color__navigation;
-      }
-
-      .custom-mobile-navigation--open & {
-        padding-right: 90px;
       }
     }
   }
@@ -241,6 +250,25 @@ $distance-from-top: 78px;
       margin-left: 30px;
     }
   }
+}
+
+body .custom-mobile-navigation .region-small-search form#views-exposed-form-search-indholdside-page-1 {
+  padding-right: 45px;
+
+  .form-actions {
+    width: 45px;
+
+    .form-submit {
+      width: 45px;
+      height: 45px;
+    }
+
+    &::after {
+      height: 25px;
+      width: 25px;
+    }
+  }
+
 }
 
 // --------------------------------------------------
