@@ -271,6 +271,19 @@ body .custom-mobile-navigation .region-small-search form#views-exposed-form-sear
 
 }
 
+.region-small-search form#views-exposed-form-search-indholdside-page-1 .form-input {
+  &::placeholder {
+    text-transform: uppercase;
+  }
+
+  &:focus {
+    text-transform: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
