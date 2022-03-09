@@ -7,7 +7,7 @@
 
           <div class="flexy-spacer"></div>
 
-          <div class="d-none d-md-block">
+          <div class="d-none d-md-block" id="desktop-top-navigation" >
             {{ page.header__top_navigation }}
           </div>
         </div>
@@ -15,7 +15,7 @@
     </div>
     <div class="custom-header-row custom-header-row--desktop-navigation d-none d-md-block">
       <div class="container">
-        <div class="flexy-row">
+        <div class="flexy-row" id="desktop-main-navigation">
           <div class="flexy-spacer"></div>
 
           {{ page.header__main_navigation }}
@@ -36,12 +36,9 @@
             </button>
 
             <div class="custom-mobile-navigation-popup">
-              <div class="custom-mobile-navigation-popup__navigation custom-mobile-navigation-popup__navigation--vertical">
-                {{ page.header__main_navigation }}
-                {{ page.small_search }}
+              <div class="custom-mobile-navigation-popup__navigation custom-mobile-navigation-popup__navigation--vertical" id="mobile-main-navigation">
               </div>
-              <div class="custom-mobile-navigation-popup__navigation custom-mobile-navigation-popup__navigation--horizontal">
-                {{ page.header__top_navigation }}
+              <div class="custom-mobile-navigation-popup__navigation custom-mobile-navigation-popup__navigation--horizontal" id="mobile-top-navigation">
               </div>
             </div>
           </div>
