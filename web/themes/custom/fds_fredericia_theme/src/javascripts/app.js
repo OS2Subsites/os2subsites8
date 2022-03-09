@@ -39,26 +39,21 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 // Custom mobile navigation.
-(function($) {
-  $(document).ready(function ($) {
-    $('#mobile-main-navigation').append($('#desktop-main-navigation').html());
-    $('#mobile-top-navigation').append($('#desktop-top-navigation').html());
+(function() {
+  function handleToggle(event) {
+    var menu = document.querySelector('.custom-mobile-navigation');
 
-    function handleToggle(event) {
-      var menu = document.querySelector('.custom-mobile-navigation');
+    menu.classList.toggle('custom-mobile-navigation--open');
+  }
 
-      menu.classList.toggle('custom-mobile-navigation--open');
-    }
+  var buttons = document.querySelectorAll('.js-custom-mobile-navigation-toggle');
 
-    var buttons = document.querySelectorAll('.js-custom-mobile-navigation-toggle');
+  for (var i = 0; i < buttons.length; i += 1) {
+    var button = buttons[i];
 
-    for (var i = 0; i < buttons.length; i += 1) {
-      var button = buttons[i];
-
-      button.addEventListener('click', handleToggle);
-    }
-  });
-})(jQuery);
+    button.addEventListener('click', handleToggle);
+  }
+})();
 
 // Items for "Senest besøgte indhold".
 (function($, Drupal, drupalSettings) {
