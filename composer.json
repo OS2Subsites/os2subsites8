@@ -50,6 +50,7 @@
         "drupal/editor_file": "^1.4",
         "drupal/entity_clone": "^1.0@beta",
         "drupal/fancy_file_delete": "^2.0",
+        "drupal/header_and_footer_scripts": "^3.0",
         "drupal/stage_file_proxy": "^1.0",
         "drupal/upgrade_status": "^2.11",
         "drush/drush": "^9.7.1 | ^10.0.0",
