@@ -3,7 +3,7 @@
  * array-foreach
  *   Array#forEach ponyfill for older browsers
  *   (Ponyfill: A polyfill that doesn't overwrite the native method)
- * 
+ *
  * https://github.com/twada/array-foreach
  *
  * Copyright (c) 2015-2016 Takuto Wada
@@ -3263,13 +3263,14 @@ document.addEventListener('DOMContentLoaded', function() {
   var items = JSON.parse(localStorage.getItem('visitedContent'));
   var listNode = document.createElement('UL');
   var noOfItemsToDisplay = 6;
+  items.reverse();
 
   for (var i = 0; i < items.length && i < noOfItemsToDisplay; i += 1) {
     var item = items[i];
     var listItemNode = document.createElement('LI');
     listItemNode.innerHTML = '<a href=' + item.path + '>' + item.label + '</a>';
 
-    listNode.prepend(listItemNode);
+    listNode.append(listItemNode);
   }
 
   wrapper.innerHTML = '';
