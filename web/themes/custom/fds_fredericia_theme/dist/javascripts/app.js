@@ -3268,7 +3268,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < items.length && i < noOfItemsToDisplay; i += 1) {
     var item = items[i];
     var listItemNode = document.createElement('LI');
-    listItemNode.innerHTML = '<a href=' + item.path + '>' + item.label + '</a>';
+    listItemNode.innerHTML = '<a href=/' + item.path + '>' + item.label + '';
 
     listNode.append(listItemNode);
   }
