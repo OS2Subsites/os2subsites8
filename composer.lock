@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11a0f6bc8596c12c28e1736801079c48",
+    "content-hash": "b2706df17eb1d567553b01096b114748",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -153,21 +153,22 @@
         },
         {
             "name": "bellcom/os2subsites_provision",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2subsite_provision.git",
-                "reference": "356fbbe4ceb1dd6577dd50b0012f205ca4e169ad"
+                "reference": "eceb4d4656fd654aab088ea31bdda4457b756c37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/356fbbe4ceb1dd6577dd50b0012f205ca4e169ad",
-                "reference": "356fbbe4ceb1dd6577dd50b0012f205ca4e169ad",
+                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/eceb4d4656fd654aab088ea31bdda4457b756c37",
+                "reference": "eceb4d4656fd654aab088ea31bdda4457b756c37",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -176,9 +177,9 @@
             "description": "Server scripts solution to manage Drupal multisite.",
             "support": {
                 "issues": "https://github.com/bellcom/os2subsite_provision/issues",
-                "source": "https://github.com/bellcom/os2subsite_provision/tree/1.0.0"
+                "source": "https://github.com/bellcom/os2subsite_provision/tree/master"
             },
-            "time": "2021-02-23T08:35:25+00:00"
+            "time": "2022-03-17T16:03:01+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -19727,6 +19728,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
+        "bellcom/os2subsites_provision": 20,
         "drupal/anonymous_subscriptions": 20,
         "drupal/entity_clone": 10,
         "os2web/os2web": 20,
