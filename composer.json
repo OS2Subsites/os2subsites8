@@ -117,6 +117,9 @@
         "patches": {
             "drupal/image_widget_crop": {
                 "3124459 - Hard limit edge case issue": "https://www.drupal.org/files/issues/2020-04-02/fix_hard_limit_edge_case.patch"
+            },
+            "drupal/core": {
+                "CKEditor update - SA Moderately critical - Third-party libraries - SA-CORE-2022-005" : "https://www.drupal.org/files/issues/2022-03-17/3270054-SA-CORE-2022-005_2.patch"
             }
         }
     }
