@@ -8,7 +8,9 @@
     });
 
     const tertierMenu = $('.region-header__top-navigation .menu--tertiaer ul.menu').html();
-    $('#desktop-main-navigation').append('<ul class="tertier-mobile-menu">' + tertierMenu + '</ul>');
+    if (tertierMenu) {
+      $('#desktop-main-navigation').append('<ul class="tertier-mobile-menu">' + tertierMenu + '</ul>');
+    }
   });
 })(jQuery);
 
