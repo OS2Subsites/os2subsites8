@@ -18,6 +18,10 @@ $distance-from-top: 0;
 
 @mixin custom-mobile-navigation-mixin() {}
 
+.tertier-mobile-menu {
+  display: none;
+}
+
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
@@ -278,7 +282,43 @@ $distance-from-top: 0;
         }
       }
     }
+
+    .tertier-mobile-menu {
+      border-top: 1px solid #dadce0;
+      margin: 0;
+      padding-left: 0;
+
+      .custom-mobile-navigation--open & {
+        display: block;
+      }
+
+      li {
+        position: relative;
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      a {
+        font-size: $small-text;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        display: block;
+        color: $color-text;
+        padding: 20px;
+
+        &.is-active, &:hover, &:focus {
+          color: $color__link__hover;
+          text-decoration: underline;
+        }
+      }
+    }
   }
+
   .custom-mobile-navigation-popup__navigation--horizontal {
     display: none;
 

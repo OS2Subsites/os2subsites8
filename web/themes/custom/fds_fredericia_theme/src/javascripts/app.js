@@ -6,6 +6,9 @@
       $(this).toggleClass('expanded');
       $(this).parent().parent().children('.menu').toggleClass('open');
     });
+
+    const tertierMenu = $('.region-header__top-navigation .menu--tertiaer ul.menu').html();
+    $('#desktop-main-navigation').append('<ul class="tertier-mobile-menu">' + tertierMenu + '</ul>');
   });
 })(jQuery);
 
