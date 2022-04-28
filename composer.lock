@@ -157,12 +157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2subsite_provision.git",
-                "reference": "eceb4d4656fd654aab088ea31bdda4457b756c37"
+                "reference": "89a7202548462dfbb6946fda9978cfad3e77412b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/eceb4d4656fd654aab088ea31bdda4457b756c37",
-                "reference": "eceb4d4656fd654aab088ea31bdda4457b756c37",
+                "url": "https://api.github.com/repos/bellcom/os2subsite_provision/zipball/89a7202548462dfbb6946fda9978cfad3e77412b",
+                "reference": "89a7202548462dfbb6946fda9978cfad3e77412b",
                 "shasum": ""
             },
             "require": {
@@ -177,9 +177,9 @@
             "description": "Server scripts solution to manage Drupal multisite.",
             "support": {
                 "issues": "https://github.com/bellcom/os2subsite_provision/issues",
-                "source": "https://github.com/bellcom/os2subsite_provision/tree/master"
+                "source": "https://github.com/bellcom/os2subsite_provision/tree/BKDK-556"
             },
-            "time": "2022-03-17T16:03:01+00:00"
+            "time": "2022-04-19T13:57:01+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
