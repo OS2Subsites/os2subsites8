@@ -357,7 +357,7 @@ body .page-container {
   color: #fff !important;
   background-color: $background_color__secondary !important;
 
-  a {
+  a, h2, h3, h4 {
     color: #fff !important;
   }
 }
@@ -401,6 +401,11 @@ body {
     max-width: unset;
   }
 }
+
+.fake-link {
+  text-decoration: underline;
+}
+
 
 // --------------------------------------------------
 // Responsive
