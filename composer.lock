@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "a8b20f2c9f303abeaa94c2296c9c31ee",
+=======
+    "content-hash": "cb99084a902b38d0a9aa4031476838d5",
+>>>>>>> a2c09440d5eb45bf367a724b6711e09cb930daa5
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3496,6 +3500,54 @@
             ],
             "description": "Drupal Console Extend Plugin",
             "time": "2020-11-18T00:15:28+00:00"
+        },
+        {
+            "name": "drupal/cookieinformation",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cookieinformation.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cookieinformation-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "3e749d0230c52f952b06fb0e45ec2d6c85913250"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1650629832",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "HeikkiY",
+                    "homepage": "https://www.drupal.org/user/3442607"
+                },
+                {
+                    "name": "beltofte",
+                    "homepage": "https://www.drupal.org/user/151799"
+                }
+            ],
+            "description": "Integration cookie consent popup from Cookieinformation.com.",
+            "homepage": "https://www.drupal.org/project/cookieinformation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cookieinformation"
+            }
         },
         {
             "name": "drupal/core",
@@ -20083,5 +20135,5 @@
         "php": ">=7.0.8"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
