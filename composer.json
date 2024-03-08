@@ -40,12 +40,13 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal/anonymous_subscriptions": "1.x-dev@dev",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8.0",
-        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/core": "^9",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
         "drupal/editor_file": "^1.4",
         "drupal/fancy_file_delete": "^2.0",
         "drupal/stage_file_proxy": "^1.0",
-        "drupal/upgrade_status": "^2.11",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "os2web/os2web": "dev-master",
         "os2web/os2web_banner": "dev-master",
@@ -60,7 +61,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.8.0"
+        "drupal/core-dev": "^9"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -69,7 +70,17 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "simplesamlphp/composer-module-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/console-extend-plugin": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/core-project-message": true
+        }
     },
     "autoload": {
         "classmap": [
@@ -117,10 +128,7 @@
         "patches": {
             "drupal/image_widget_crop": {
                 "3124459 - Hard limit edge case issue": "https://www.drupal.org/files/issues/2020-04-02/fix_hard_limit_edge_case.patch"
-            },
-            "drupal/core": {
-                "CKEditor update - SA Moderately critical - Third-party libraries - SA-CORE-2022-005" : "https://www.drupal.org/files/issues/2022-03-17/3270054-SA-CORE-2022-005_2.patch"
             }
-        }
+	}
     }
 }
